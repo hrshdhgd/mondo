@@ -20,7 +20,7 @@ jobs:
             const issueBody = payload.issue.body;
             // List the unique identifiers for each template you want to match
             const templateIdentifiers = [
-              '<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->',
+              'title: "[Obsolete]"',
               '<!-- .github/ISSUE_TEMPLATE/template_name_2.md -->',
               // Add more template identifiers as needed
             ];
