@@ -5,7 +5,31 @@ on:
     types: [opened]
 
 jobs:
+  check_template:
+    runs-on: ubuntu-latest
+    outputs:
+      is_correct_template: ${{ steps.check_template.outputs.is_correct_template }}
+    steps:
+      - name: Check issue template
+        id: check_template
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const payload = context.payload;
+            const issueBody = payload.issue.body;
+            // List the unique identifiers for each template you want to match
+            const templateIdentifiers = [
+              '<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->',
+              '<!-- .github/ISSUE_TEMPLATE/template_name_2.md -->',
+              // Add more template identifiers as needed
+            ];
+            const isCorrectTemplate = templateIdentifiers.some(identifier => issueBody.includes(identifier));
+            core.setOutput('is_correct_template', isCorrectTemplate);
+
   copy_description_to_comment:
+    needs: check_template
+    if: ${{ needs.check_template.outputs.is_correct_template == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Copy issue description to comment with header
