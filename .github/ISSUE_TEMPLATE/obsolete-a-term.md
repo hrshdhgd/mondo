@@ -6,7 +6,7 @@ labels: obsolete
 assignees: 
 
 ---
-<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->
+
 **Mondo term (ID and Label)**
 
 
