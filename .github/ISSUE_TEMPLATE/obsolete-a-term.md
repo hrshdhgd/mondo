@@ -1,4 +1,3 @@
-<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->
 ---
 name: Obsolete a term
 about: Obsolete or deprecate an existing Mondo term
@@ -7,7 +6,7 @@ labels: obsolete
 assignees: 
 
 ---
-
+<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->
 **Mondo term (ID and Label)**
 
 
