@@ -1,3 +1,4 @@
+<!-- .github/ISSUE_TEMPLATE/obsolete-a-term.md -->
 ---
 name: Obsolete a term
 about: Obsolete or deprecate an existing Mondo term
