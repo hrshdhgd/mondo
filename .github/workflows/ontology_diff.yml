@@ -40,16 +40,32 @@ jobs:
                 if (content) {
                   // GitHub's max issue body size is approximately 65536 characters
                   const maxBodySize = 65536;
-                  const linesToShow = 20; // Number of lines to show at the start and end when truncating
                   if (content.length > maxBodySize) {
                     const lines = content.split('\n');
-                    if (lines.length > linesToShow * 2) {
-                      const firstLines = lines.slice(0, linesToShow).join('\n');
-                      const lastLines = lines.slice(-linesToShow).join('\n');
-                      content = `${firstLines}\n\n... [truncated] ...\n\n${lastLines}`;
+                    let firstHalfEnd = Math.floor(lines.length / 2);
+                    let secondHalfStart = firstHalfEnd;
+              
+                    // Find the end of the last complete section in the first half
+                    for (let i = firstHalfEnd; i >= 0; i--) {
+                      if (lines[i].startsWith('#') && i !== firstHalfEnd) {
+                        firstHalfEnd = i;
+                        break;
+                      }
                     }
+              
+                    // Find the start of the first complete section in the second half
+                    for (let i = secondHalfStart; i < lines.length; i++) {
+                      if (lines[i].startsWith('#')) {
+                        secondHalfStart = i;
+                        break;
+                      }
+                    }
+              
+                    const firstLines = lines.slice(0, firstHalfEnd).join('\n');
+                    const lastLines = lines.slice(secondHalfStart).join('\n');
+                    content = `${firstLines}\n\n... [truncated] ...\n\n${lastLines}`;
                   }
-        
+              
                   const { owner, repo } = context.repo;
                   const { number } = context.issue;
                   const existingComments = await github.rest.issues.listComments({
@@ -79,5 +95,6 @@ jobs:
               } else {
                 console.log("The markdown file does not exist."); // Debug print if the file does not exist
               }
+              
         
 
