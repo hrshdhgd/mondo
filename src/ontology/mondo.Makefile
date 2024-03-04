@@ -995,7 +995,7 @@ tmp/mondo-main-branch.obo:
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mondo-edit.obo -O tmp/mondo-main-branch.obo && cp mondo-edit.obo tmp/mondo-base.obo
 
 diff-md: tmp/mondo-main-branch.obo
-	runoak -i simpleobo:tmp/mondo-base.obo diff -X simpleobo:tmp/mondo-main-branch.obo \
+	runoak -i simpleobo:tmp/mondo-main-branch.obo diff -X simpleobo:tmp/mondo-base.obo \
 	-o reports/difference_md.md --output-type md
 
 
