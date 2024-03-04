@@ -7,7 +7,6 @@ on:
 
 jobs:
   post-comment:
-    if: github.event.label.name == 'Automated'
     runs-on: ubuntu-latest
 
     steps:
