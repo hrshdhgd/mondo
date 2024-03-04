@@ -31,40 +31,53 @@ jobs:
           uses: actions/github-script@v7
           with:
             script: |
-                const fs = require('fs');
-                const path = 'src/ontology/reports/difference_md.md';
-                if (fs.existsSync(path)) {
-                    const content = fs.readFileSync(path, 'utf8');
-                    console.log("Content of the markdown file:");
-                    console.log(content); // Debug print of the file content
-                    if (content) {
-                    const { owner, repo } = context.repo;
-                    const { number } = context.issue;
-                    const existingComments = await github.rest.issues.listComments({
-                        owner,
-                        repo,
-                        issue_number: number
+              const fs = require('fs');
+              const path = 'src/ontology/reports/difference_md.md';
+              if (fs.existsSync(path)) {
+                let content = fs.readFileSync(path, 'utf8');
+                console.log("Content of the markdown file:");
+                console.log(content); // Debug print of the file content
+                if (content) {
+                  // GitHub's max issue body size is approximately 65536 characters
+                  const maxBodySize = 65536;
+                  const linesToShow = 20; // Number of lines to show at the start and end when truncating
+                  if (content.length > maxBodySize) {
+                    const lines = content.split('\n');
+                    if (lines.length > linesToShow * 2) {
+                      const firstLines = lines.slice(0, linesToShow).join('\n');
+                      const lastLines = lines.slice(-linesToShow).join('\n');
+                      content = `${firstLines}\n\n... [truncated] ...\n\n${lastLines}`;
+                    }
+                  }
+        
+                  const { owner, repo } = context.repo;
+                  const { number } = context.issue;
+                  const existingComments = await github.rest.issues.listComments({
+                    owner,
+                    repo,
+                    issue_number: number
+                  });
+                  const existingComment = existingComments.data.find(comment => comment.user.login === 'github-actions[bot]');
+                  if (existingComment) {
+                    await github.rest.issues.updateComment({
+                      owner,
+                      repo,
+                      comment_id: existingComment.id,
+                      body: content
                     });
-                    const existingComment = existingComments.data.find(comment => comment.user.login === 'github-actions[bot]');
-                    if (existingComment) {
-                        await github.rest.issues.updateComment({
-                        owner,
-                        repo,
-                        comment_id: existingComment.id,
-                        body: content
-                        });
-                    } else {
-                        await github.rest.issues.createComment({
-                        owner,
-                        repo,
-                        issue_number: number,
-                        body: content
-                        });
-                    }
-                    } else {
-                    console.log("The markdown file is empty."); // Debug print if the file is empty
-                    }
+                  } else {
+                    await github.rest.issues.createComment({
+                      owner,
+                      repo,
+                      issue_number: number,
+                      body: content
+                    });
+                  }
                 } else {
-                    console.log("The markdown file does not exist."); // Debug print if the file does not exist
+                  console.log("The markdown file is empty."); // Debug print if the file is empty
                 }
+              } else {
+                console.log("The markdown file does not exist."); // Debug print if the file does not exist
+              }
+        
 
