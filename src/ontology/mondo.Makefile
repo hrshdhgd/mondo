@@ -995,7 +995,7 @@ tmp/mondo-released.obo:
 	wget http://purl.obolibrary.org/obo/mondo.obo -O tmp/mondo-released.obo && cp mondo-edit.obo tmp/mondo-base.obo
 
 diff-md: tmp/mondo-released.obo
-	runoak -i simpleobo:tmp/mondo-base.obo diff -X simpleobo:tmp/modo-released.obo \
+	runoak -i simpleobo:tmp/mondo-base.obo diff -X simpleobo:tmp/mondo-released.obo \
 	-o reports/difference_md.md --output-type md
 
 
