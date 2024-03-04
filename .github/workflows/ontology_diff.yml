@@ -6,8 +6,10 @@ on:
         types: [opened, synchronize]
 
 jobs:
+
     post-comment:
         runs-on: ubuntu-latest
+
 
         steps:
         - name: Checkout repository
