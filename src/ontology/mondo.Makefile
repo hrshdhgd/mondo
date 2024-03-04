@@ -991,11 +991,11 @@ all: config/exclusion_reasons.tsv
 ##################################
 ##### GH Actions for diff  #######
 ##################################
-tmp/mondo-released.obo:
-	wget http://purl.obolibrary.org/obo/mondo.obo -O tmp/mondo-released.obo && cp mondo-edit.obo tmp/mondo-base.obo
+tmp/mondo-main-branch.obo:
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mondo-edit.obo -O tmp/mondo-main-branch.obo && cp mondo-edit.obo tmp/mondo-base.obo
 
-diff-md: tmp/mondo-released.obo
-	runoak -i simpleobo:tmp/mondo-base.obo diff -X simpleobo:tmp/mondo-released.obo \
+diff-md: tmp/mondo-main-branch.obo
+	runoak -i simpleobo:tmp/mondo-base.obo diff -X simpleobo:tmp/mondo-main-branch.obo \
 	-o reports/difference_md.md --output-type md
 
 
