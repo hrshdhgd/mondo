@@ -11,7 +11,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     outputs:
-      phraseExists: ${{ steps.check-body.outputs.result }}
+      phraseExists: ${{ steps.check-body.outputs.phrase_exists }}
       commentId: ${{ steps.check-body.outputs.commentId }}
     steps:
       - name: Check if issue body contains 'Hey ontobot'
@@ -65,13 +65,13 @@ jobs:
             console.log(`Check Result: ${JSON.stringify(checkResult)}`);
 
             return {
-               result: checkResult.result,
+               phrase_exists: checkResult.result,
                commentId: checkResult.commentId
              };
 
       - name: Log phraseExists output
         run: |
-          echo "phraseExists: ${{ steps.check-body.outputs.result }}"
+          echo "phraseExists: ${{ steps.check-body.outputs.phrase_exists }}"
 
   build:
     needs: check
