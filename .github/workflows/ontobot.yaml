@@ -34,17 +34,35 @@ jobs:
               issue_number: context.issue.number
             });
 
-            // Check each comment for the phrase
-            for (const comment of comments.data) {
-              if (comment.body.toLowerCase().includes('hey ontobot')) {
-                bodyText += ' ' + comment.body.toLowerCase();
-                commentId = comment.id;
+            // Function to check for the phrase in bodyText and comments
+            function checkForPhrase(bodyText, comments) {
+              const phrase = 'hey ontobot';
+              
+              // Check if bodyText includes the phrase
+              let result = bodyText.includes(phrase);
+              
+              // If not found in bodyText, check each comment
+              if (!result) {
+                for (let comment of comments) {
+                  if (comment.body.toLowerCase().includes(phrase)) {
+                    result = true;
+                    commentId = comment.id;
+                    break;
+                  }
+                }
               }
+
+              return {
+                result: result,
+                commentId: result ? commentId : null
+              };
             }
 
+            const checkResult = checkForPhrase(bodyText, comments.data);
+
             return {
-              result: bodyText.includes('hey ontobot'),
-              commentId: commentId
+              result: checkResult.result,
+              commentId: checkResult.commentId
             };
   
   build:
