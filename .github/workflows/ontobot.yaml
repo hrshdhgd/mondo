@@ -60,6 +60,10 @@ jobs:
 
             const checkResult = checkForPhrase(bodyText, comments.data);
 
+            console.log(`Result: ${checkResult.result}`);
+            console.log(`Comment ID: ${checkResult.commentId}`);
+            console.log(`Check Result: ${JSON.stringify(checkResult)}`);
+
             return {
               result: checkResult.result,
               commentId: checkResult.commentId
