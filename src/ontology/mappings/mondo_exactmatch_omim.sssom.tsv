@@ -11,11 +11,12 @@
 # license: https://creativecommons.org/publicdomain/zero/1.0/
 # mapping_date: '2022-02-11'
 # mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_exactmatch_omim.sssom.tsv
-# mapping_set_version: http://purl.obolibrary.org/obo/mondo/releases/2024-03-04/mappings/mondo_exactmatch_omim.sssom.tsv
+# mapping_set_version: http://purl.obolibrary.org/obo/mondo/releases/2024-06-04/mappings/mondo_exactmatch_omim.sssom.tsv
 # object_source: https://www.omim.org/
 # object_source_version: http://www.orphadata.org/data/ORDO/ordo_orphanet_3.1.owl
 # subject_source: http://purl.obolibrary.org/obo/mondo.owl
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+MONDO:0000070	Mycobacterium tuberculosis, susceptibility	skos:exactMatch	OMIM:607948	mycobacterium tuberculosis, susceptibility to	semapv:ManualMappingCuration
 MONDO:0000208	microcephaly, short stature, and impaired glucose metabolism 1	skos:exactMatch	OMIM:616033	microcephaly, short stature, and impaired glucose metabolism 1	semapv:ManualMappingCuration
 MONDO:0000902	agenesis of the corpus callosum with peripheral neuropathy	skos:exactMatch	OMIM:218000	agenesis of the corpus callosum with peripheral neuropathy	semapv:ManualMappingCuration
 MONDO:0000908	arrhythmogenic right ventricular dysplasia 13	skos:exactMatch	OMIM:615616	arrhythmogenic right ventricular dysplasia, familial, 13	semapv:ManualMappingCuration
@@ -242,7 +243,6 @@ MONDO:0007234	branchial myoclonus with spastic paraparesis and cerebellar ataxia
 MONDO:0007235	branchiooculofacial syndrome	skos:exactMatch	OMIM:113620	branchiooculofacial syndrome	semapv:ManualMappingCuration
 MONDO:0007236	branchiootorenal syndrome 1	skos:exactMatch	OMIM:113650	branchiootorenal syndrome 1	semapv:ManualMappingCuration
 MONDO:0007237	familial juvenile hypertrophy of the breast	skos:exactMatch	OMIM:113670	hypertrophy of the breast, juvenile	semapv:ManualMappingCuration
-MONDO:0007239	epidermolytic ichthyosis	skos:exactMatch	OMIM:113800	epidermolytic hyperkeratosis 1	semapv:ManualMappingCuration
 MONDO:0007240	progressive familial heart block, type 1A	skos:exactMatch	OMIM:113900	progressive familial heart block,  iia 1a	semapv:ManualMappingCuration
 MONDO:0007241	bundle branch block, familial isolated complete right	skos:exactMatch	OMIM:113950	bundle branch block, familial isolated complete right	semapv:ManualMappingCuration
 MONDO:0007242	butyrylesterase 1	skos:exactMatch	OMIM:113960	butyrylesterase 1	semapv:ManualMappingCuration
@@ -504,7 +504,7 @@ MONDO:0007520	ectrodactyly, ectodermal dysplasia, and cleft lip-palate syndrome 
 MONDO:0007521	obsolete egasyn	skos:exactMatch	OMIM:129905	egasyn	semapv:ManualMappingCuration
 MONDO:0007523	Ehlers-Danlos syndrome, hypermobility type	skos:exactMatch	OMIM:130020	ehlers-danlos syndrome, hypermobility  iia	semapv:ManualMappingCuration
 MONDO:0007524	autosomal dominant Ehlers-Danlos syndrome, vascular type	skos:exactMatch	OMIM:130050	ehlers-danlos syndrome, vascular  iia	semapv:ManualMappingCuration
-MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasis type	skos:exactMatch	OMIM:130060	ehlers-danlos syndrome, arthrochalasia type, 1	semapv:ManualMappingCuration
+MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasia type	skos:exactMatch	OMIM:130060	ehlers-danlos syndrome, arthrochalasia type, 1	semapv:ManualMappingCuration
 MONDO:0007528	Ehlers-Danlos syndrome, autosomal dominant, type unspecified	skos:exactMatch	OMIM:130090	ehlers-danlos syndrome, autosomal dominant,  iia unspecified	semapv:ManualMappingCuration
 MONDO:0007529	elastosis perforans serpiginosa	skos:exactMatch	OMIM:130100	elastosis perforans serpiginosa	semapv:ManualMappingCuration
 MONDO:0007530	electroencephalographic peculiarity: 14 and 6 per sec. positive spike phenomenon	skos:exactMatch	OMIM:130200	electroencephalographic peculiarity: 14 and 6 per sec. positive spike phenomenon	semapv:ManualMappingCuration
@@ -631,7 +631,6 @@ MONDO:0007661	Tourette syndrome	skos:exactMatch	OMIM:137580	gilles lange 50a tou
 MONDO:0007662	anterior segment dysgenesis 4	skos:exactMatch	OMIM:137600	anterior segment dysgenesis 4	semapv:ManualMappingCuration
 MONDO:0007663	glaucoma with elevated episcleral venous pressure	skos:exactMatch	OMIM:137700	glaucoma with elevated episcleral venous pressure	semapv:ManualMappingCuration
 MONDO:0007664	glaucoma 1, open angle, A	skos:exactMatch	OMIM:137750	glaucoma 1, open angle, a	semapv:ManualMappingCuration
-MONDO:0007665	obsolete glaucoma 1, open angle, E	skos:exactMatch	OMIM:137760	glaucoma, primary open angle	semapv:ManualMappingCuration
 MONDO:0007666	glaucoma-sleep apnea syndrome	skos:exactMatch	OMIM:137763	glaucoma and sleep apnea	semapv:ManualMappingCuration
 MONDO:0007668	globulin anomaly involving beta (2A)-globulin	skos:exactMatch	OMIM:137900	globulin anomaly involving beta (2a)-globulin	semapv:ManualMappingCuration
 MONDO:0007669	renal cysts and diabetes syndrome	skos:exactMatch	OMIM:137920	renal cysts and diabetes syndrome	semapv:ManualMappingCuration
@@ -696,7 +695,6 @@ MONDO:0007732	Holt-Oram syndrome	skos:exactMatch	OMIM:142900	holt-oram syndrome	
 MONDO:0007733	holoprosencephaly 3	skos:exactMatch	OMIM:142945	holoprosencephaly 3	semapv:ManualMappingCuration
 MONDO:0007734	holoprosencephaly 4	skos:exactMatch	OMIM:142946	holoprosencephaly 4	semapv:ManualMappingCuration
 MONDO:0007735	congenital Horner syndrome	skos:exactMatch	OMIM:143000	horner syndrome, congenital	semapv:ManualMappingCuration
-MONDO:0007736	HPA 1 Recognition polymorphism, beta-globin-related	skos:exactMatch	OMIM:143020	hpa 1 recognition polymorphism, beta-globin-related	semapv:ManualMappingCuration
 MONDO:0007737	humeroradial synostosis	skos:exactMatch	OMIM:143050	humeroradial synostosis	semapv:ManualMappingCuration
 MONDO:0007738	spondyloepiphyseal dysplasia with congenital joint dislocations	skos:exactMatch	OMIM:143095	spondyloepiphyseal dysplasia with congenital joint dislocations	semapv:ManualMappingCuration
 MONDO:0007739	Huntington disease	skos:exactMatch	OMIM:143100	huntington disease	semapv:ManualMappingCuration
@@ -715,7 +713,7 @@ MONDO:0007754	hyperhidrosis palmaris ET plantaris	skos:exactMatch	OMIM:144110	hy
 MONDO:0007755	hyperimmunoglobulin G1(A1) syndrome	skos:exactMatch	OMIM:144120	hyperimmunoglobulin g1(a1) syndrome	semapv:ManualMappingCuration
 MONDO:0007756	hyperkeratosis lenticularis perstans	skos:exactMatch	OMIM:144150	hyperkeratosis lenticularis perstans	semapv:ManualMappingCuration
 MONDO:0007757	hyperkeratosis-hyperpigmentation syndrome	skos:exactMatch	OMIM:144190	hyperkeratosis-hyperpigmentation syndrome	semapv:ManualMappingCuration
-MONDO:0007758	epidermolytic palmoplantar keratoderma	skos:exactMatch	OMIM:144200	palmoplantar keratoderma, epidermolytic, 1	semapv:ManualMappingCuration
+MONDO:0007758	epidermolytic palmoplantar keratoderma, 1	skos:exactMatch	OMIM:144200	palmoplantar keratoderma, epidermolytic, 1	semapv:ManualMappingCuration
 MONDO:0007759	hyperlipidemia, familial combined, LPL related	skos:exactMatch	OMIM:144250	hyperlipidemia, familial combined, 3	semapv:ManualMappingCuration
 MONDO:0007760	hyperlipoproteinemia, type II, and deafness	skos:exactMatch	OMIM:144300	hyperlipoproteinemia,  iia ii, and deafness	semapv:ManualMappingCuration
 MONDO:0007761	obsolete hyperlipoproteinemia type IV	skos:exactMatch	OMIM:144600	hyperlipoproteinemia,  iia 4	semapv:ManualMappingCuration
@@ -1213,7 +1211,7 @@ MONDO:0008298	postaxial tetramelic oligodactyly	skos:exactMatch	OMIM:176240	post
 MONDO:0008299	posterior column ataxia	skos:exactMatch	OMIM:176250	posterior column ataxia	semapv:ManualMappingCuration
 MONDO:0008300	Prader-Willi syndrome	skos:exactMatch	OMIM:176270	prader-willi syndrome	semapv:ManualMappingCuration
 MONDO:0008301	Guttmacher syndrome	skos:exactMatch	OMIM:176305	preaxial deficiency, postaxial polydactyly, and hypospadias	semapv:ManualMappingCuration
-MONDO:0008302	centra precocious puberty 1	skos:exactMatch	OMIM:176400	precocious puberty, central, 1	semapv:ManualMappingCuration
+MONDO:0008302	central precocious puberty 1	skos:exactMatch	OMIM:176400	precocious puberty, central, 1	semapv:ManualMappingCuration
 MONDO:0008303	familial male-limited precocious puberty	skos:exactMatch	OMIM:176410	precocious puberty, male-limited	semapv:ManualMappingCuration
 MONDO:0008304	premature chromatid separation trait	skos:exactMatch	OMIM:176430	premature chromatid separation trait	semapv:ManualMappingCuration
 MONDO:0008305	Currarino triad	skos:exactMatch	OMIM:176450	currarino syndrome	semapv:ManualMappingCuration
@@ -1327,7 +1325,6 @@ MONDO:0008426	Shprintzen-Goldberg syndrome	skos:exactMatch	OMIM:182212	shprintze
 MONDO:0008427	sister chromatid exchange, frequency of	skos:exactMatch	OMIM:182220	sister chromatid exchange, frequency of	semapv:ManualMappingCuration
 MONDO:0008428	septooptic dysplasia	skos:exactMatch	OMIM:182230	septooptic dysplasia	semapv:ManualMappingCuration
 MONDO:0008430	skeletal dysplasia with delayed epiphyseal and carpal bone ossification	skos:exactMatch	OMIM:182255	skeletal dysplasia with delayed epiphyseal and carpal bone ossification	semapv:ManualMappingCuration
-MONDO:0008431	slipped femoral capital epiphyses	skos:exactMatch	OMIM:182260	slipped femoral capital epiphyses	semapv:ManualMappingCuration
 MONDO:0008432	obsolete ketone compounds, ability to smell	skos:exactMatch	OMIM:182270	ketone compounds, ability to smell	semapv:ManualMappingCuration
 MONDO:0008433	small cell lung carcinoma	skos:exactMatch	OMIM:182280	small cell cancer of the lung	semapv:ManualMappingCuration
 MONDO:0008434	Smith-Magenis syndrome	skos:exactMatch	OMIM:182290	smith-magenis syndrome	semapv:ManualMappingCuration
@@ -1904,7 +1901,6 @@ MONDO:0009063	ventriculomegaly-cystic kidney disease	skos:exactMatch	OMIM:219730
 MONDO:0009064	ocular cystinosis	skos:exactMatch	OMIM:219750	cystinosis, adult nonnephropathic	semapv:ManualMappingCuration
 MONDO:0009066	juvenile nephropathic cystinosis	skos:exactMatch	OMIM:219900	cystinosis, late-onset juvenile or adolescent nephropathic  iia	semapv:ManualMappingCuration
 MONDO:0009067	cystinuria	skos:exactMatch	OMIM:220100	cystinuria	semapv:ManualMappingCuration
-MONDO:0009068	cytochrome-c oxidase deficiency disease	skos:exactMatch	OMIM:220110	mitochondrial complex 4 deficiency, nuclear  iia 1	semapv:ManualMappingCuration
 MONDO:0009069	congenital lactic acidosis, Saguenay-Lac-Saint-Jean type	skos:exactMatch	OMIM:220111	mitochondrial complex 4 deficiency, nuclear  iia 5	semapv:ManualMappingCuration
 MONDO:0009070	D-glyceric aciduria	skos:exactMatch	OMIM:220120	d-glyceric aciduria	semapv:ManualMappingCuration
 MONDO:0009072	Dandy-Walker syndrome	skos:exactMatch	OMIM:220200	dandy-walker syndrome	semapv:ManualMappingCuration
@@ -2372,7 +2368,6 @@ MONDO:0009559	mandibulofacial dysostosis with mental deficiency	skos:exactMatch	
 MONDO:0009560	oculotrichoanal syndrome	skos:exactMatch	OMIM:248450	manitoba oculotrichoanal syndrome	semapv:ManualMappingCuration
 MONDO:0009561	alpha-mannosidosis	skos:exactMatch	OMIM:248500	mannosidosis, alpha b, lysosomal	semapv:ManualMappingCuration
 MONDO:0009562	beta-mannosidosis	skos:exactMatch	OMIM:248510	mannosidosis, beta a, lysosomal	semapv:ManualMappingCuration
-MONDO:0009563	maple syrup urine disease	skos:exactMatch	OMIM:248600	maple syrup urine disease	semapv:ManualMappingCuration
 MONDO:0009564	Marden-Walker syndrome	skos:exactMatch	OMIM:248700	marden-walker syndrome	semapv:ManualMappingCuration
 MONDO:0009565	microcephaly-glomerulonephritis-marfanoid habitus syndrome	skos:exactMatch	OMIM:248760	marfanoid habitus with microcephaly and glomerulonephritis	semapv:ManualMappingCuration
 MONDO:0009566	marfanoid habitus-autosomal recessive intellectual disability syndrome	skos:exactMatch	OMIM:248770	marfanoid mental retardation syndrome, autosomal	semapv:ManualMappingCuration
@@ -2482,7 +2477,7 @@ MONDO:0009676	autosomal recessive limb-girdle muscular dystrophy type 2B	skos:ex
 MONDO:0009677	autosomal recessive limb-girdle muscular dystrophy type 2C	skos:exactMatch	OMIM:253700	muscular dystrophy, limb-girdle, autosomal recessive 5	semapv:ManualMappingCuration
 MONDO:0009678	muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A, 4	skos:exactMatch	OMIM:253800	muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies),  iia a, 4	semapv:ManualMappingCuration
 MONDO:0009680	congenital muscular dystrophy-infantile cataract-hypogonadism syndrome	skos:exactMatch	OMIM:254000	muscular dystrophy, congenital, with infantile cataract and hypogonadism	semapv:ManualMappingCuration
-MONDO:0009681	Ullrich congenital muscular dystrophy 1	skos:exactMatch	OMIM:254090	ullrich congenital muscular dystrophy 1	semapv:ManualMappingCuration
+MONDO:0009681	Ullrich congenital muscular dystrophy 1A	skos:exactMatch	OMIM:254090	ullrich congenital muscular dystrophy 1	semapv:ManualMappingCuration
 MONDO:0009682	muscular dystrophy, congenital, with rapid progression	skos:exactMatch	OMIM:254100	muscular dystrophy, congenital, with rapid progression	semapv:ManualMappingCuration
 MONDO:0009683	autosomal recessive limb-girdle muscular dystrophy type 2H	skos:exactMatch	OMIM:254110	muscular dystrophy, limb-girdle, autosomal recessive 8	semapv:ManualMappingCuration
 MONDO:0009684	muscular hypertonia, lethal	skos:exactMatch	OMIM:254120	muscular hypertonia, lethal	semapv:ManualMappingCuration
@@ -2720,7 +2715,7 @@ MONDO:0009936	familial primary pulmonary hypoplasia	skos:exactMatch	OMIM:265430	
 MONDO:0009938	pulmonic stenosis	skos:exactMatch	OMIM:265500	pulmonic stenosis	semapv:ManualMappingCuration
 MONDO:0009939	pulmonic stenosis and congenital nephrosis	skos:exactMatch	OMIM:265600	pulmonic stenosis and congenital nephrosis	semapv:ManualMappingCuration
 MONDO:0009940	pycnodysostosis	skos:exactMatch	OMIM:265800	pycnodysostosis	semapv:ManualMappingCuration
-MONDO:0009941	Pygmy	skos:exactMatch	OMIM:265850	pygmy	semapv:ManualMappingCuration
+MONDO:0009941	obsolete Pygmy	skos:exactMatch	OMIM:265850	pygmy	semapv:ManualMappingCuration
 MONDO:0009942	pyknoachondrogenesis	skos:exactMatch	OMIM:265880	pyknoachondrogenesis	semapv:ManualMappingCuration
 MONDO:0009943	Pyle disease	skos:exactMatch	OMIM:265900	pyle disease	semapv:ManualMappingCuration
 MONDO:0009944	pyloric atresia	skos:exactMatch	OMIM:265950	pyloric atresia	semapv:ManualMappingCuration
@@ -3032,7 +3027,7 @@ MONDO:0010278	Christianson syndrome	skos:exactMatch	OMIM:300243	intellectual dev
 MONDO:0010279	terminal osseous dysplasia-pigmentary defects syndrome	skos:exactMatch	OMIM:300244	terminal osseous dysplasia	semapv:ManualMappingCuration
 MONDO:0010280	ptosis, hereditary congenital 2	skos:exactMatch	OMIM:300245	ptosis, hereditary congenital 2	semapv:ManualMappingCuration
 MONDO:0010281	Danon disease	skos:exactMatch	OMIM:300257	danon disease	semapv:ManualMappingCuration
-MONDO:0010282	mycobacterium tuberculosis, susceptibility to, X-linked	skos:exactMatch	OMIM:300259	mycobacterium tuberculosis, susceptibility to, X-linked	semapv:ManualMappingCuration
+MONDO:0010282	Mycobacterium tuberculosis, susceptibility to, X-linked	skos:exactMatch	OMIM:300259	mycobacterium tuberculosis, susceptibility to, X-linked	semapv:ManualMappingCuration
 MONDO:0010283	syndromic X-linked intellectual disability Lubs type	skos:exactMatch	OMIM:300260	intellectual developmental disorder, x-linked, syndromic, lubs  iia	semapv:ManualMappingCuration
 MONDO:0010284	Armfield syndrome	skos:exactMatch	OMIM:300261	intellectual developmental disorder, x-linked, syndromic, armfield  iia	semapv:ManualMappingCuration
 MONDO:0010285	syndromic X-linked intellectual disability Abidi type	skos:exactMatch	OMIM:300262	intellectual developmental disorder, x-linked, syndromic, abidi  iia	semapv:ManualMappingCuration
@@ -3164,7 +3159,7 @@ MONDO:0010421	Bruton-type agammaglobulinemia	skos:exactMatch	OMIM:300755	agammag
 MONDO:0010422	Alzheimer disease 16	skos:exactMatch	OMIM:300756	alzheimer disease 16	semapv:ManualMappingCuration
 MONDO:0010423	hypospadias 2, X-linked	skos:exactMatch	OMIM:300758	hypospadias 2, X-linked	semapv:ManualMappingCuration
 MONDO:0010424	surfactant metabolism dysfunction, pulmonary, 4	skos:exactMatch	OMIM:300770	surfactant metabolism dysfunction, pulmonary, 4	semapv:ManualMappingCuration
-MONDO:0010425	Lisch epithelial corneal dystrophy	skos:exactMatch	OMIM:300778	corneal dystrophy, lisch epithelial	semapv:ManualMappingCuration
+MONDO:0010425	Lisch epithelial corneal dystrophy	skos:exactMatch	OMIM:620763		semapv:ManualMappingCuration
 MONDO:0010426	X-linked endothelial corneal dystrophy	skos:exactMatch	OMIM:300779	corneal dystrophy, endothelial, X-linked	semapv:ManualMappingCuration
 MONDO:0010427	syndromic X-linked intellectual disability Raymond type	skos:exactMatch	OMIM:300799	intellectual developmental disorder, x-linked, syndromic, raymond  iia	semapv:ManualMappingCuration
 MONDO:0010428	chromosome Xp11.23-p11.22 duplication syndrome	skos:exactMatch	OMIM:300801	chromosome xp11.23-p11.22 duplication syndrome	semapv:ManualMappingCuration
@@ -4074,7 +4069,7 @@ MONDO:0011395	cone-rod dystrophy 3	skos:exactMatch	OMIM:604116	cone-rod dystroph
 MONDO:0011396	loricrin keratoderma	skos:exactMatch	OMIM:604117	vohwinkel syndrome, variant form	semapv:ManualMappingCuration
 MONDO:0011397	autosomal dominant cerebellar ataxia, deafness and narcolepsy	skos:exactMatch	OMIM:604121	cerebellar ataxia, deafness, and narcolepsy, autosomal dominant	semapv:ManualMappingCuration
 MONDO:0011398	dystrophic epidermolysis bullosa pruriginosa	skos:exactMatch	OMIM:604129	epidermolysis bullosa pruriginosa	semapv:ManualMappingCuration
-MONDO:0011399	alpha thalassemia	skos:exactMatch	OMIM:604131	alpha-thalassemia	semapv:ManualMappingCuration
+MONDO:0011399	alpha thalassemia spectrum	skos:exactMatch	OMIM:604131	alpha-thalassemia	semapv:ManualMappingCuration
 MONDO:0011400	dilated cardiomyopathy 1G	skos:exactMatch	OMIM:604145	cardiomyopathy, dilated, 1g	semapv:ManualMappingCuration
 MONDO:0011401	Alzheimer disease without neurofibrillary tangles	skos:exactMatch	OMIM:604154	alzheimer disease 15	semapv:ManualMappingCuration
 MONDO:0011402	congenital cataracts-facial dysmorphism-neuropathy syndrome	skos:exactMatch	OMIM:604168	congenital cataracts, facial dysmorphism, and neuropathy	semapv:ManualMappingCuration
@@ -4577,8 +4572,7 @@ MONDO:0011936	microphthalmia with brain and digit anomalies	skos:exactMatch	OMIM
 MONDO:0011937	peeling skin syndrome 4	skos:exactMatch	OMIM:607936	peeling skin syndrome 4	semapv:ManualMappingCuration
 MONDO:0011938	atrial septal defect 2	skos:exactMatch	OMIM:607941	atrial septal defect 2	semapv:ManualMappingCuration
 MONDO:0011939	Spondyloenchondrodysplasia with immune dysregulation	skos:exactMatch	OMIM:607944	spondyloenchondrodysplasia with immune dysregulation	semapv:ManualMappingCuration
-MONDO:0011940	mycobacterium tuberculosis, susceptibility to	skos:exactMatch	OMIM:607948	mycobacterium tuberculosis, susceptibility to	semapv:ManualMappingCuration
-MONDO:0011941	mycobacterium tuberculosis, susceptibility to, 1	skos:exactMatch	OMIM:607949	mycobacterium tuberculosis, susceptibility to, 1	semapv:ManualMappingCuration
+MONDO:0011941	Mycobacterium tuberculosis, susceptibility to, 1	skos:exactMatch	OMIM:607949	mycobacterium tuberculosis, susceptibility to, 1	semapv:ManualMappingCuration
 MONDO:0011942	systemic lupus erythematosus with nephritis, susceptibility to, 1	skos:exactMatch	OMIM:607965	systemic lupus erythematosus with nephritis, susceptibility to, 1	semapv:ManualMappingCuration
 MONDO:0011943	systemic lupus erythematosus with nephritis, susceptibility to, 2	skos:exactMatch	OMIM:607966	systemic lupus erythematosus with nephritis, susceptibility to, 2	semapv:ManualMappingCuration
 MONDO:0011944	systemic lupus erythematosus with nephritis, susceptibility to, 3	skos:exactMatch	OMIM:607967	systemic lupus erythematosus with nephritis, susceptibility to, 3	semapv:ManualMappingCuration
@@ -4826,7 +4820,7 @@ MONDO:0012202	malaria, mild, susceptibility to	skos:exactMatch	OMIM:609148	malar
 MONDO:0012203	familial hyperthyroidism due to mutations in TSH receptor	skos:exactMatch	OMIM:609152	hyperthyroidism, nonautoimmune	semapv:ManualMappingCuration
 MONDO:0012204	familial pseudohyperkalemia	skos:exactMatch	OMIM:609153	pseudohyperkalemia, familial, 2, due to red cell leak	semapv:ManualMappingCuration
 MONDO:0012205	autosomal dominant striatal neurodegeneration type 1	skos:exactMatch	OMIM:609161	striatal degeneration, autosomal dominant 1	semapv:ManualMappingCuration
-MONDO:0012206	Czech dysplasia, metatarsal type	skos:exactMatch	OMIM:609162	czech dysplasia	semapv:ManualMappingCuration
+MONDO:0012206	spondyloepiphyseal dysplasia with metatarsal shortening	skos:exactMatch	OMIM:609162	czech dysplasia	semapv:ManualMappingCuration
 MONDO:0012207	umbilicus, familial flat	skos:exactMatch	OMIM:609164	umbilicus, familial flat	semapv:ManualMappingCuration
 MONDO:0012208	congenital reticular ichthyosiform erythroderma	skos:exactMatch	OMIM:609165	ichthyosis with confetti	semapv:ManualMappingCuration
 MONDO:0012209	branchiogenic deafness syndrome	skos:exactMatch	OMIM:609166	branchiogenic-deafness syndrome	semapv:ManualMappingCuration
@@ -4912,7 +4906,7 @@ MONDO:0012293	autosomal recessive nonsyndromic hearing loss 23	skos:exactMatch	O
 MONDO:0012294	obsolete drug metabolism, poor, Cyp2C19-related	skos:exactMatch	OMIM:609535	drug metabolism, poor, cyp2c19-related	semapv:ManualMappingCuration
 MONDO:0012295	complement component 5 deficiency	skos:exactMatch	OMIM:609536	complement component 5 deficiency	semapv:ManualMappingCuration
 MONDO:0012296	lipomyelomeningocele	skos:exactMatch	OMIM:609537	lipomyelomeningocele	semapv:ManualMappingCuration
-MONDO:0012297	SPOAN syndrome	skos:exactMatch	OMIM:609541	spastic paraplegia, optic atrophy, and neuropathy	semapv:ManualMappingCuration
+MONDO:0012297	spastic paraplegia, optic atropy, and neuropathy	skos:exactMatch	OMIM:609541	spastic paraplegia, optic atrophy, and neuropathy	semapv:ManualMappingCuration
 MONDO:0012298	omphalocele, diaphragmatic hernia, and radial ray defects	skos:exactMatch	OMIM:609545	omphalocele, diaphragmatic hernia, and radial ray defects	semapv:ManualMappingCuration
 MONDO:0012299	nanophthalmos 2	skos:exactMatch	OMIM:609549	nanophthalmos 2	semapv:ManualMappingCuration
 MONDO:0012300	prostate cancer, hereditary, 6	skos:exactMatch	OMIM:609558	prostate cancer, hereditary, 6	semapv:ManualMappingCuration
@@ -4973,7 +4967,7 @@ MONDO:0012355	autosomal recessive nonsyndromic hearing loss 28	skos:exactMatch	O
 MONDO:0012357	obsolete glaucoma 1, open angle, G	skos:exactMatch	OMIM:609887	glaucoma 1, open angle, g	semapv:ManualMappingCuration
 MONDO:0012358	leprosy, susceptibility to, 1	skos:exactMatch	OMIM:609888	leprosy, susceptibility to, 1	semapv:ManualMappingCuration
 MONDO:0012359	combined immunodeficiency due to partial RAG1 deficiency	skos:exactMatch	OMIM:609889	alpha/beta t-cell lymphopenia with gamma/delta t-cell expansion, severe cytomegalovirus infection, and autoimmunity	semapv:ManualMappingCuration
-MONDO:0012360	congenital nongoitrous hypothryoidism 3	skos:exactMatch	OMIM:609893	hypothyroidism, congenital, nongoitrous, 3	semapv:ManualMappingCuration
+MONDO:0012360	congenital nongoitrous hypothyroidism 3	skos:exactMatch	OMIM:609893	hypothyroidism, congenital, nongoitrous, 3	semapv:ManualMappingCuration
 MONDO:0012361	systemic lupus erythematosus, susceptibility to, 5	skos:exactMatch	OMIM:609903	systemic lupus erythematosus, susceptibility to, 5	semapv:ManualMappingCuration
 MONDO:0012362	dilated cardiomyopathy 1P	skos:exactMatch	OMIM:609909	cardiomyopathy, dilated, 1p	semapv:ManualMappingCuration
 MONDO:0012363	retinitis pigmentosa 32	skos:exactMatch	OMIM:609913	retinitis pigmentosa 32	semapv:ManualMappingCuration
@@ -5215,7 +5209,7 @@ MONDO:0012602	autosomal recessive nonsyndromic hearing loss 24	skos:exactMatch	O
 MONDO:0012603	episodic kinesigenic dyskinesia 2	skos:exactMatch	OMIM:611031	episodic kinesigenic dyskinesia 2	semapv:ManualMappingCuration
 MONDO:0012604	isolated microphthalmia 3	skos:exactMatch	OMIM:611038	microphthalmia, syndromic 16	semapv:ManualMappingCuration
 MONDO:0012605	isolated microphthalmia 5	skos:exactMatch	OMIM:611040	microphthalmia, isolated 5	semapv:ManualMappingCuration
-MONDO:0012606	mycobacterium tuberculosis, susceptibility to, 2	skos:exactMatch	OMIM:611046	mycobacterium tuberculosis, susceptibility to, 2	semapv:ManualMappingCuration
+MONDO:0012606	Mycobacterium tuberculosis, susceptibility to, 2	skos:exactMatch	OMIM:611046	mycobacterium tuberculosis, susceptibility to, 2	semapv:ManualMappingCuration
 MONDO:0012607	asthma-related traits, susceptibility to, 5	skos:exactMatch	OMIM:611064	asthma-related traits, susceptibility to, 5	semapv:ManualMappingCuration
 MONDO:0012608	neuronopathy, distal hereditary motor, autosomal recessive 4	skos:exactMatch	OMIM:611067	neuronopathy, distal hereditary motor, autosomal recessive 4	semapv:ManualMappingCuration
 MONDO:0012609	Alzheimer disease 12	skos:exactMatch	OMIM:611073	alzheimer disease 12	semapv:ManualMappingCuration
@@ -5644,7 +5638,7 @@ MONDO:0013041	atypical hemolytic-uremic syndrome with I factor anomaly	skos:exac
 MONDO:0013042	atypical hemolytic-uremic syndrome with B factor anomaly	skos:exactMatch	OMIM:612924	hemolytic uremic syndrome, atypical, susceptibility to, 4	semapv:ManualMappingCuration
 MONDO:0013043	atypical hemolytic-uremic syndrome with C3 anomaly	skos:exactMatch	OMIM:612925	hemolytic uremic syndrome, atypical, susceptibility to, 5	semapv:ManualMappingCuration
 MONDO:0013044	atypical hemolytic-uremic syndrome with thrombomodulin anomaly	skos:exactMatch	OMIM:612926	hemolytic uremic syndrome, atypical, susceptibility to, 6	semapv:ManualMappingCuration
-MONDO:0013045	mycobacterium tuberculosis, susceptibility to, 3	skos:exactMatch	OMIM:612929	mycobacterium tuberculosis, susceptibility to, 3	semapv:ManualMappingCuration
+MONDO:0013045	Mycobacterium tuberculosis, susceptibility to, 3	skos:exactMatch	OMIM:612929	mycobacterium tuberculosis, susceptibility to, 3	semapv:ManualMappingCuration
 MONDO:0013046	glycogen storage disease due to muscle beta-enolase deficiency	skos:exactMatch	OMIM:612932	glycogen storage disease 13	semapv:ManualMappingCuration
 MONDO:0013047	glycogen storage disease due to lactate dehydrogenase M-subunit deficiency	skos:exactMatch	OMIM:612933	glycogen storage disease 11	semapv:ManualMappingCuration
 MONDO:0013048	hereditary spastic paraplegia 50	skos:exactMatch	OMIM:612936	spastic paraplegia 50, autosomal recessive	semapv:ManualMappingCuration
@@ -5982,7 +5976,7 @@ MONDO:0013394	porencephaly-microcephaly-bilateral congenital cataract syndrome	s
 MONDO:0013395	retinitis pigmentosa 4	skos:exactMatch	OMIM:613731	retinitis pigmentosa 4	semapv:ManualMappingCuration
 MONDO:0013397	acne inversa, familial, 2	skos:exactMatch	OMIM:613736	acne inversa, familial, 2, with or without dowling-degos disease	semapv:ManualMappingCuration
 MONDO:0013398	acne inversa, familial, 3	skos:exactMatch	OMIM:613737	acne inversa, familial, 3	semapv:ManualMappingCuration
-MONDO:0013400	Congenital adrenal insuffiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency	skos:exactMatch	OMIM:613743	adrenal insufficiency, congenital, with 46,xy sex reversal, partial or complete	semapv:ManualMappingCuration
+MONDO:0013400	Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency	skos:exactMatch	OMIM:613743	adrenal insufficiency, congenital, with 46,xy sex reversal, partial or complete	semapv:ManualMappingCuration
 MONDO:0013401	hereditary spastic paraplegia 51	skos:exactMatch	OMIM:613744	spastic paraplegia 51, autosomal recessive	semapv:ManualMappingCuration
 MONDO:0013402	retinitis pigmentosa 27	skos:exactMatch	OMIM:613750	retinitis pigmentosa 27	semapv:ManualMappingCuration
 MONDO:0013403	heterotaxy, visceral, 4, autosomal	skos:exactMatch	OMIM:613751	heterotaxy, visceral, 4, autosomal	semapv:ManualMappingCuration
@@ -6328,7 +6322,7 @@ MONDO:0013753	Charcot-Marie-Tooth disease axonal type 2P	skos:exactMatch	OMIM:61
 MONDO:0013754	cutis laxa, autosomal recessive, type 1B	skos:exactMatch	OMIM:614437	cutis laxa, autosomal recessive,  iia 1b	semapv:ManualMappingCuration
 MONDO:0013755	PYCR1-related de Barsy syndrome	skos:exactMatch	OMIM:614438	cutis laxa, autosomal recessive,  iia 3b	semapv:ManualMappingCuration
 MONDO:0013756	hypertrophic osteoarthropathy, primary, autosomal recessive, 2	skos:exactMatch	OMIM:614441	hypertrophic osteoarthropathy, primary, autosomal recessive, 2	semapv:ManualMappingCuration
-MONDO:0013757	congenital nongoitrous hypothryoidism 6	skos:exactMatch	OMIM:614450	hypothyroidism, congenital, nongoitrous, 6	semapv:ManualMappingCuration
+MONDO:0013757	congenital nongoitrous hypothyroidism 6	skos:exactMatch	OMIM:614450	hypothyroidism, congenital, nongoitrous, 6	semapv:ManualMappingCuration
 MONDO:0013758	Charcot-Marie-Tooth disease dominant intermediate E	skos:exactMatch	OMIM:614455	charcot-marie-tooth disease, dominant intermediate e	semapv:ManualMappingCuration
 MONDO:0013759	melanoma, cutaneous malignant, susceptibility to, 8	skos:exactMatch	OMIM:614456	melanoma, cutaneous malignant, susceptibility to, 8	semapv:ManualMappingCuration
 MONDO:0013760	congenital ichthyosis-intellectual disability-spastic quadriplegia syndrome	skos:exactMatch	OMIM:614457	ichthyosis, spastic quadriplegia, and impaired intellectual development	semapv:ManualMappingCuration
@@ -6370,7 +6364,7 @@ MONDO:0013796	chromosome 17q12 duplication syndrome	skos:exactMatch	OMIM:614526	
 MONDO:0013797	chromosome 17q12 deletion syndrome	skos:exactMatch	OMIM:614527	chromosome 17q12 deletion syndrome	semapv:ManualMappingCuration
 MONDO:0013798	chromosome 16q22 deletion syndrome	skos:exactMatch	OMIM:614541	chromosome 16q22 deletion syndrome	semapv:ManualMappingCuration
 MONDO:0013799	obsolete efavirenz, poor metabolism of	skos:exactMatch	OMIM:614546	efavirenz, poor metabolism of	semapv:ManualMappingCuration
-MONDO:0013800	Ehlers-Danlos syndrome, kyphoscoliotic and deafness type	skos:exactMatch	OMIM:614557	ehlers-danlos syndrome, kyphoscoliotic type, 2	semapv:ManualMappingCuration
+MONDO:0013800	Ehlers-Danlos syndrome, kyphoscoliotic type, 2	skos:exactMatch	OMIM:614557	ehlers-danlos syndrome, kyphoscoliotic type, 2	semapv:ManualMappingCuration
 MONDO:0013801	developmental and epileptic encephalopathy, 13	skos:exactMatch	OMIM:614558	developmental and epileptic encephalopathy 13	semapv:ManualMappingCuration
 MONDO:0013802	infantile cerebellar-retinal degeneration	skos:exactMatch	OMIM:614559	infantile cerebellar-retinal degeneration	semapv:ManualMappingCuration
 MONDO:0013803	leukoencephalopathy with calcifications and cysts	skos:exactMatch	OMIM:614561	leukoencephalopathy, brain calcifications, and cysts	semapv:ManualMappingCuration
@@ -6432,7 +6426,7 @@ MONDO:0013863	combined immunodeficiency due to LRBA deficiency	skos:exactMatch	O
 MONDO:0013864	Cornelia de Lange syndrome 4	skos:exactMatch	OMIM:614701	cornelia lange lange syndrome 4 with or without midline brain defects	semapv:ManualMappingCuration
 MONDO:0013865	mitochondrial hypertrophic cardiomyopathy with lactic acidosis due to MTO1 deficiency	skos:exactMatch	OMIM:614702	combined oxidative phosphorylation deficiency 10	semapv:ManualMappingCuration
 MONDO:0013866	neuronal ceroid lipofuscinosis 11	skos:exactMatch	OMIM:614706	ceroid lipofuscinosis, neuronal, 11	semapv:ManualMappingCuration
-MONDO:0013867	brown-Vialetto-van Laere syndrome 2	skos:exactMatch	OMIM:614707	brown-vialetto-van laere syndrome 2	semapv:ManualMappingCuration
+MONDO:0013867	Brown-Vialetto-van Laere syndrome 2	skos:exactMatch	OMIM:614707	brown-vialetto-van laere syndrome 2	semapv:ManualMappingCuration
 MONDO:0013868	porokeratosis 7, multiple types	skos:exactMatch	OMIM:614714	porokeratosis 7, multiple types	semapv:ManualMappingCuration
 MONDO:0013869	adenine phosphoribosyltransferase deficiency	skos:exactMatch	OMIM:614723	adenine phosphoribosyltransferase deficiency	semapv:ManualMappingCuration
 MONDO:0013870	TMEM165-congenital disorder of glycosylation	skos:exactMatch	OMIM:614727	congenital disorder of glycosylation,  iia iik	semapv:ManualMappingCuration
@@ -6651,7 +6645,7 @@ MONDO:0014087	Smith-McCort dysplasia 2	skos:exactMatch	OMIM:615222	smith-mccort 
 MONDO:0014088	advanced sleep phase syndrome 2	skos:exactMatch	OMIM:615224	advanced sleep phase syndrome, familial, 2	semapv:ManualMappingCuration
 MONDO:0014089	corneal intraepithelial dyskeratosis-palmoplantar hyperkeratosis-laryngeal dyskeratosis syndrome	skos:exactMatch	OMIM:615225	palmoplantar carcinoma, multiple self-healing	semapv:ManualMappingCuration
 MONDO:0014090	polydactyly, postaxial, type A6	skos:exactMatch	OMIM:615226	polydactyly, postaxial,  iia a6	semapv:ManualMappingCuration
-MONDO:0014091	mitochondrial complex V (ATP synthase) deficiency nuclear type 4	skos:exactMatch	OMIM:615228	mitochondrial complex 5 (atp synthase) deficiency, nuclear  iia 4b	semapv:ManualMappingCuration
+MONDO:0014091	mitochondrial complex V (ATP synthase) deficiency nuclear type 4B	skos:exactMatch	OMIM:615228	mitochondrial complex 5 (atp synthase) deficiency, nuclear  iia 4b	semapv:ManualMappingCuration
 MONDO:0014092	schizophrenia 18	skos:exactMatch	OMIM:615232	schizophrenia 18	semapv:ManualMappingCuration
 MONDO:0014093	retinitis pigmentosa 66	skos:exactMatch	OMIM:615233	retinitis pigmentosa 66	semapv:ManualMappingCuration
 MONDO:0014094	severe congenital hypochromic anemia with ringed sideroblasts	skos:exactMatch	OMIM:615234	anemia, hypochromic microcytic, with iron overload 2	semapv:ManualMappingCuration
@@ -7043,7 +7037,7 @@ MONDO:0014489	limb-girdle muscular dystrophy due to POMK deficiency	skos:exactMa
 MONDO:0014490	ketoacidosis due to monocarboxylate transporter-1 deficiency	skos:exactMatch	OMIM:616095	monocarboxylate transporter 1 deficiency	semapv:ManualMappingCuration
 MONDO:0014491	immunodeficiency 37	skos:exactMatch	OMIM:616098	immunodeficiency 37	semapv:ManualMappingCuration
 MONDO:0014492	wooly hair-palmoplantar keratoderma syndrome	skos:exactMatch	OMIM:616099	palmoplantar keratoderma and woolly hair	semapv:ManualMappingCuration
-MONDO:0014493	autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency	skos:exactMatch	OMIM:616100	immune dysregulation with autoimmunity, immunodeficiency, and lymphoproliferation	semapv:ManualMappingCuration
+MONDO:0014493	autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency	skos:exactMatch	OMIM:616100	immune dysregulation with autoimmunity, immunodeficiency, and lymphoproliferation	semapv:ManualMappingCuration
 MONDO:0014494	psoriasis 15, pustular, susceptibility to	skos:exactMatch	OMIM:616106	psoriasis 15, pustular, susceptibility to	semapv:ManualMappingCuration
 MONDO:0014495	retinitis pigmentosa-juvenile cataract-short stature-intellectual disability syndrome	skos:exactMatch	OMIM:616108	retinal dystrophy, juvenile cataracts, and short stature syndrome	semapv:ManualMappingCuration
 MONDO:0014496	mitochondrial complex III deficiency nuclear type 9	skos:exactMatch	OMIM:616111	mitochondrial complex 3 deficiency, nuclear  iia 9	semapv:ManualMappingCuration
@@ -7151,10 +7145,10 @@ MONDO:0014598	developmental and epileptic encephalopathy, 31	skos:exactMatch	OMI
 MONDO:0014599	intellectual disability, autosomal dominant 34	skos:exactMatch	OMIM:616351	intellectual developmental disorder, autosomal dominant 34	semapv:ManualMappingCuration
 MONDO:0014600	dyskeratosis congenita, autosomal recessive 6	skos:exactMatch	OMIM:616353	dyskeratosis congenita, autosomal recessive 6	semapv:ManualMappingCuration
 MONDO:0014601	autosomal recessive spinocerebellar ataxia 20	skos:exactMatch	OMIM:616354	spinocerebellar ataxia, autosomal recessive 20	semapv:ManualMappingCuration
-MONDO:0014602	intellectual disability-macrocephaly-hypotonia-behavioral abnormalities syndrome	skos:exactMatch	OMIM:616355	houge-janssens syndrome 1	semapv:ManualMappingCuration
+MONDO:0014602	Hogue-Janssens syndrome 1	skos:exactMatch	OMIM:616355	houge-janssens syndrome 1	semapv:ManualMappingCuration
 MONDO:0014603	autosomal dominant nonsyndromic hearing loss 40	skos:exactMatch	OMIM:616357	deafness, autosomal dominant 40	semapv:ManualMappingCuration
 MONDO:0014604	Parkinson disease 21	skos:exactMatch	OMIM:616361	parkinson disease 21	semapv:ManualMappingCuration
-MONDO:0014605	microcephaly-corpus callosum hypoplasia-intellectual disability-facial dysmorphism syndrome	skos:exactMatch	OMIM:616362	houge-janssens syndrome 2	semapv:ManualMappingCuration
+MONDO:0014605	Houge-Janssens syndrome 2	skos:exactMatch	OMIM:616362	houge-janssens syndrome 2	semapv:ManualMappingCuration
 MONDO:0014606	intellectual disability-microcephaly-strabismus-behavioral abnormalities syndrome	skos:exactMatch	OMIM:616364	white-sutton syndrome	semapv:ManualMappingCuration
 MONDO:0014607	developmental and epileptic encephalopathy, 32	skos:exactMatch	OMIM:616366	developmental and epileptic encephalopathy 32	semapv:ManualMappingCuration
 MONDO:0014608	mandibulofacial dysostosis with alopecia	skos:exactMatch	OMIM:616367	mandibulofacial dysostosis with alopecia	semapv:ManualMappingCuration
@@ -7345,7 +7339,6 @@ MONDO:0014801	even-plus syndrome	skos:exactMatch	OMIM:616854	even-plus syndrome	
 MONDO:0014802	Cowden syndrome 7	skos:exactMatch	OMIM:616858	cowden syndrome 7	semapv:ManualMappingCuration
 MONDO:0014803	spasticity-ataxia-gait anomalies syndrome	skos:exactMatch	OMIM:616859	spasticity, childhood-onset, with hyperglycinemia	semapv:ManualMappingCuration
 MONDO:0014804	sideroblastic anemia 3	skos:exactMatch	OMIM:616860	anemia, sideroblastic, 3, pyridoxine-refractory	semapv:ManualMappingCuration
-MONDO:0014805	Hao-Fountain syndrome	skos:exactMatch	OMIM:616863	hao-fountain syndrome	semapv:ManualMappingCuration
 MONDO:0014806	spinal muscular atrophy with congenital bone fractures 1	skos:exactMatch	OMIM:616866	spinal muscular atrophy with congenital bone fractures 1	semapv:ManualMappingCuration
 MONDO:0014807	spinal muscular atrophy with congenital bone fractures 2	skos:exactMatch	OMIM:616867	spinal muscular atrophy with congenital bone fractures 2	semapv:ManualMappingCuration
 MONDO:0014808	congenital secretory sodium diarrhea 8	skos:exactMatch	OMIM:616868	diarrhea 8, secretory sodium, congenital	semapv:ManualMappingCuration
@@ -7595,6 +7588,7 @@ MONDO:0018264	oculocutaneous albinism type 6	skos:exactMatch	OMIM:113750	albinis
 MONDO:0018274	GM3 synthase deficiency	skos:exactMatch	OMIM:609056	salt and pepper developmental regression syndrome	semapv:ManualMappingCuration
 MONDO:0018310	Langerhans cell histiocytosis	skos:exactMatch	OMIM:604856	langerhans cell histiocytosis	semapv:ManualMappingCuration
 MONDO:0018346	ferro-cerebro-cutaneous syndrome	skos:exactMatch	OMIM:301072	neurodevelopmental disorder with epilepsy and hemochromatosis	semapv:ManualMappingCuration
+MONDO:0018382	epiphysiolysis of the hip	skos:exactMatch	OMIM:182260	slipped femoral capital epiphyses	semapv:ManualMappingCuration
 MONDO:0018445	global developmental delay - lung cysts - overgrowth - Wilms tumor syndrome	skos:exactMatch	OMIM:618272	global developmental delay, lung cysts, overgrowth, and wilms tumor	semapv:ManualMappingCuration
 MONDO:0018473	hyperlipoproteinemia type 3	skos:exactMatch	OMIM:617347	hyperlipoproteinemia,  iia 3	semapv:ManualMappingCuration
 MONDO:0018544	adrenoleukodystrophy	skos:exactMatch	OMIM:300100	adrenoleukodystrophy	semapv:ManualMappingCuration
@@ -7801,6 +7795,9 @@ MONDO:0023662	lymphatic malformation 10	skos:exactMatch	OMIM:619369	lymphatic ma
 MONDO:0023664	spermatogenic failure 54	skos:exactMatch	OMIM:619379	spermatogenic failure 54	semapv:ManualMappingCuration
 MONDO:0023670	Bardet-Biedl syndrome 20	skos:exactMatch	OMIM:619471	bardet-biedl syndrome 20	semapv:ManualMappingCuration
 MONDO:0023671	oculopharyngodistal myopathy 3	skos:exactMatch	OMIM:619473	oculopharyngodistal myopathy 3	semapv:ManualMappingCuration
+MONDO:0023691	maple syrup urine disease type 1A	skos:exactMatch	OMIM:248600	maple syrup urine disease	semapv:ManualMappingCuration
+MONDO:0023692	maple syrup urine disease type 1B	skos:exactMatch	OMIM:620698		semapv:ManualMappingCuration
+MONDO:0023693	maple syrup urine disease type 2	skos:exactMatch	OMIM:620699		semapv:ManualMappingCuration
 MONDO:0023807	obsolete midphalangeal hair	skos:exactMatch	OMIM:157200	midphalangeal hair	semapv:ManualMappingCuration
 MONDO:0023873	obsolete Noonan-like/multiple giant cell lesion syndrome	skos:exactMatch	OMIM:163955		semapv:ManualMappingCuration
 MONDO:0024264	hypothyroidism, congenital, nongoitrous, 2	skos:exactMatch	OMIM:218700	hypothyroidism, congenital, nongoitrous, 2	semapv:ManualMappingCuration
@@ -7831,7 +7828,7 @@ MONDO:0024526	Zimmermann-Laband syndrome 1	skos:exactMatch	OMIM:135500	zimmerman
 MONDO:0024527	glomerulopathy with fibronectin deposits 1	skos:exactMatch	OMIM:137950	glomerulopathy with fibronectin deposits 1	semapv:ManualMappingCuration
 MONDO:0024528	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 1	skos:exactMatch	OMIM:157640	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 1	semapv:ManualMappingCuration
 MONDO:0024529	MVP1	skos:exactMatch	OMIM:157700	mitral valve prolapse 1	semapv:ManualMappingCuration
-MONDO:0024530	Bethlem myopathy 1	skos:exactMatch	OMIM:158810	bethlem myopathy 1	semapv:ManualMappingCuration
+MONDO:0024530	Bethlem myopathy 1A	skos:exactMatch	OMIM:158810	bethlem myopathy 1	semapv:ManualMappingCuration
 MONDO:0024531	myopathy, tubular aggregate, 1	skos:exactMatch	OMIM:160565	myopathy, tubular aggregate, 1	semapv:ManualMappingCuration
 MONDO:0024532	otofaciocervical syndrome 1	skos:exactMatch	OMIM:166780	otofaciocervical syndrome 1	semapv:ManualMappingCuration
 MONDO:0024533	pulmonary hypertension, primary, 1	skos:exactMatch	OMIM:178600	pulmonary hypertension, primary, 1	semapv:ManualMappingCuration
@@ -8470,7 +8467,7 @@ MONDO:0032692	Galloway-Mowat syndrome 7	skos:exactMatch	OMIM:618348	galloway-mow
 MONDO:0032693	Galloway-Mowat syndrome 8	skos:exactMatch	OMIM:618349	galloway-mowat syndrome 8	semapv:ManualMappingCuration
 MONDO:0032694	microcephaly 25, primary, autosomal recessive	skos:exactMatch	OMIM:618351	microcephaly 25, primary, autosomal recessive	semapv:ManualMappingCuration
 MONDO:0032696	oocyte maturation defect 6	skos:exactMatch	OMIM:618353	oocyte/zygote/embryo maturation arrest 6	semapv:ManualMappingCuration
-MONDO:0032697	neurodevelopmental disorder and language delay with or without structural brain abnormalities	skos:exactMatch	OMIM:618354	houge-janssens syndrome 3	semapv:ManualMappingCuration
+MONDO:0032697	Houge-Janssens syndrome 3	skos:exactMatch	OMIM:618354	houge-janssens syndrome 3	semapv:ManualMappingCuration
 MONDO:0032698	neurodevelopmental disorder with central and peripheral motor dysfunction	skos:exactMatch	OMIM:618356	neurodevelopmental disorder with central and peripheral motor dysfunction	semapv:ManualMappingCuration
 MONDO:0032699	epilepsy, idiopathic generalized, susceptibility to, 15	skos:exactMatch	OMIM:618357	epilepsy, idiopathic generalized, susceptibility to, 15	semapv:ManualMappingCuration
 MONDO:0032702	Coffin-Siris syndrome 8	skos:exactMatch	OMIM:618362	coffin-siris syndrome 8	semapv:ManualMappingCuration
@@ -9243,6 +9240,7 @@ MONDO:0100522	hypotrichosis 4	skos:exactMatch	OMIM:146550	hypotrichosis 4	semapv
 MONDO:0100531	Emery-Dreifuss muscular dystrophy 1, X-linked	skos:exactMatch	OMIM:310300	emery-dreifuss muscular dystrophy 1, X-linked	semapv:ManualMappingCuration
 MONDO:0100532	blepharospasm, benign essential, susceptibility to	skos:exactMatch	OMIM:606798	blepharospasm, benign essential, susceptibility to	semapv:ManualMappingCuration
 MONDO:0100533	hemorrhage, intracerebral, susceptibility to	skos:exactMatch	OMIM:614519	hemorrhage, intracerebral, susceptibility to	semapv:ManualMappingCuration
+MONDO:0100553	OPTN-related open angle glaucoma	skos:exactMatch	OMIM:137760	glaucoma, primary open angle	semapv:ManualMappingCuration
 MONDO:0200001	obsolete chromate resistance	skos:exactMatch	OMIM:118840	chromate resistance	semapv:ManualMappingCuration
 MONDO:0600024	familial idiopathic inflammatory myopathy	skos:exactMatch	OMIM:160750	myositis	semapv:ManualMappingCuration
 MONDO:0700039	bladder exstrophy-epispadias-cloacal extrophy complex	skos:exactMatch	OMIM:600057	bladder exstrophy and epispadias complex	semapv:ManualMappingCuration
@@ -9254,6 +9252,10 @@ MONDO:0700089	paroxysmal nonkinesigenic dyskinesia 1	skos:exactMatch	OMIM:118800
 MONDO:0700090	epilepsy, familial temporal lobe, 1	skos:exactMatch	OMIM:600512	epilepsy, familial temporal lobe, 1	semapv:ManualMappingCuration
 MONDO:0700107	chromosome 19q13.11 deletion syndrome, distal	skos:exactMatch	OMIM:613026	chromosome 19q13.11 deletion syndrome, distal	semapv:ManualMappingCuration
 MONDO:0700112	heterotaxy, visceral, 5, autosomal	skos:exactMatch	OMIM:270100	heterotaxy, visceral, 5, autosomal	semapv:ManualMappingCuration
+MONDO:0700245	epidermolytic hyperkeratosis 2B, autosomal recessive	skos:exactMatch	OMIM:620707		semapv:ManualMappingCuration
+MONDO:0700248	epidermolytic hyperkeratosis 2A, autosomal dominant	skos:exactMatch	OMIM:620150	epidermolytic hyperkeratosis 2	semapv:ManualMappingCuration
+MONDO:0700249	epidermolytic hyperkeratosis 1	skos:exactMatch	OMIM:113800	epidermolytic hyperkeratosis 1	semapv:ManualMappingCuration
+MONDO:0700250	mitochondrial complex IV deficiency, nuclear type 1	skos:exactMatch	OMIM:220110	mitochondrial complex 4 deficiency, nuclear  iia 1	semapv:ManualMappingCuration
 MONDO:0800001	delayed sleep phase syndrome, susceptibility to	skos:exactMatch	OMIM:614163	delayed sleep phase disorder, susceptibility to	semapv:ManualMappingCuration
 MONDO:0800025	Teebi hypertelorism syndrome 1	skos:exactMatch	OMIM:145420	teebi hypertelorism syndrome 1	semapv:ManualMappingCuration
 MONDO:0800026	central hypoventilation syndrome, congenital, 1, with or without Hirschsprung disease	skos:exactMatch	OMIM:209880	central hypoventilation syndrome, congenital, 1	semapv:ManualMappingCuration
@@ -9275,6 +9277,7 @@ MONDO:0800131	hyper-IgE recurrent infection syndrome 4A, autosomal dominant	skos
 MONDO:0800132	autoinflammatory-pancytopenia syndrome due to DNASE2 deficiency	skos:exactMatch	OMIM:619858	autoinflammatory-pancytopenia syndrome	semapv:ManualMappingCuration
 MONDO:0800167	Knobloch syndrome 1	skos:exactMatch	OMIM:267750	knobloch syndrome 1	semapv:ManualMappingCuration
 MONDO:0800187	immunodeficiency 83, susceptibility to viral infections	skos:exactMatch	OMIM:613002	immunodeficiency 83, susceptibility to viral infections	semapv:ManualMappingCuration
+MONDO:0800306	myoclonic epilepsy of Lafora 2	skos:exactMatch	OMIM:620681	myoclonic epilepsy of lafora 2	semapv:ManualMappingCuration
 MONDO:0800341	congenital myopathy 4A, autosomal dominant	skos:exactMatch	OMIM:255310	congenital myopathy 4a, autosomal dominant	semapv:ManualMappingCuration
 MONDO:0800436	craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development 1	skos:exactMatch	OMIM:213980	craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development syndrome 1	semapv:ManualMappingCuration
 MONDO:0800437	Carey-Fineman-Ziter syndrome 1	skos:exactMatch	OMIM:254940	carey-fineman-ziter syndrome 1	semapv:ManualMappingCuration
@@ -9313,7 +9316,7 @@ MONDO:0859156	dysostosis multiplex, Ain-Naz type	skos:exactMatch	OMIM:619345	dys
 MONDO:0859157	visceral myopathy 2	skos:exactMatch	OMIM:619350	visceral myopathy 2	semapv:ManualMappingCuration
 MONDO:0859158	ataxia, intention tremor, and hypotonia syndrome, childhood-onset	skos:exactMatch	OMIM:619352	ataxia, intention tremor, and hypotonia syndrome, childhood-onset	semapv:ManualMappingCuration
 MONDO:0859159	deafness, cataract, impaired intellectual development, and polyneuropathy	skos:exactMatch	OMIM:619354	deafness, cataract, impaired intellectual development, and polyneuropathy	semapv:ManualMappingCuration
-MONDO:0859160	Mitochondrial complex IV deficiency, nuclear type 22	skos:exactMatch	OMIM:619355	mitochondrial complex 4 deficiency, nuclear  iia 22	semapv:ManualMappingCuration
+MONDO:0859160	mitochondrial complex IV deficiency, nuclear type 22	skos:exactMatch	OMIM:619355	mitochondrial complex 4 deficiency, nuclear  iia 22	semapv:ManualMappingCuration
 MONDO:0859161	onychodystrophy, osteodystrophy, impaired intellectual development, and seizures syndrome	skos:exactMatch	OMIM:619356	onychodystrophy, osteodystrophy, impaired intellectual development, and seizures syndrome	semapv:ManualMappingCuration
 MONDO:0859162	neurodevelopmental disorder with infantile epileptic spasms	skos:exactMatch	OMIM:619373	neurodevelopmental disorder with infantile epileptic spasms	semapv:ManualMappingCuration
 MONDO:0859163	Faundes-Banka syndrome	skos:exactMatch	OMIM:619376	faundes-banka syndrome	semapv:ManualMappingCuration
@@ -9527,7 +9530,7 @@ MONDO:0859516	neurodevelopmental disorder with seizures, spasticity, and complet
 MONDO:0859517	congenital myopathy 2b, severe infantile, autosomal recessive	skos:exactMatch	OMIM:620265	congenital myopathy 2b, severe infantile, autosomal recessive	semapv:ManualMappingCuration
 MONDO:0859518	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	skos:exactMatch	OMIM:620269	leukodystrophy, hypomyelinating, 26, with chondrodysplasia	semapv:ManualMappingCuration
 MONDO:0859519	neurodevelopmental disorder with absent speech and movement and behavioral abnormalities	skos:exactMatch	OMIM:620270	neurodevelopmental disorder with absent speech and movement and behavioral abnormalities	semapv:ManualMappingCuration
-MONDO:0859520	Mitochondrial complex IV deficiency, nuclear type 23	skos:exactMatch	OMIM:620275	mitochondrial complex 4 deficiency, nuclear  iia 23	semapv:ManualMappingCuration
+MONDO:0859520	mitochondrial complex IV deficiency, nuclear type 23	skos:exactMatch	OMIM:620275	mitochondrial complex 4 deficiency, nuclear  iia 23	semapv:ManualMappingCuration
 MONDO:0859521	oocyte maturation defect 14	skos:exactMatch	OMIM:620276	oocyte/zygote/embryo maturation arrest 14	semapv:ManualMappingCuration
 MONDO:0859522	spermatogenic failure 81	skos:exactMatch	OMIM:620277	spermatogenic failure 81	semapv:ManualMappingCuration
 MONDO:0859523	congenital myopathy 2c, severe infantile, autosomal dominant	skos:exactMatch	OMIM:620278	congenital myopathy 2c, severe infantile, autosomal dominant	semapv:ManualMappingCuration
@@ -9716,6 +9719,7 @@ MONDO:0958030	immunodeficiency 118	skos:exactMatch	OMIM:301115	immunodeficiency 
 MONDO:0958034	lipodystrophy, familial partial, type 9	skos:exactMatch	OMIM:620683	lipodystrophy, familial partial,  iia 9	semapv:ManualMappingCuration
 MONDO:0958035	premature ovarian failure 23	skos:exactMatch	OMIM:620686	premature ovarian failure 23	semapv:ManualMappingCuration
 MONDO:0958037	developmental dysplasia of the hip 3	skos:exactMatch	OMIM:620690	developmental dysplasia of the hip 3	semapv:ManualMappingCuration
+MONDO:0958071	Hao-Fountain syndrome due to USP7 mutation	skos:exactMatch	OMIM:616863	hao-fountain syndrome	semapv:ManualMappingCuration
 MONDO:0958174	basal cell nevus syndrome 1	skos:exactMatch	OMIM:109400	basal cell nevus syndrome 1	semapv:ManualMappingCuration
 MONDO:0958175	craniofacial microsomia 1	skos:exactMatch	OMIM:164210	craniofacial microsomia 1	semapv:ManualMappingCuration
 MONDO:0958176	oculopharyngeal muscular dystrophy 1	skos:exactMatch	OMIM:164300	oculopharyngeal muscular dystrophy 1	semapv:ManualMappingCuration
@@ -9726,7 +9730,6 @@ MONDO:0958180	prolonged electroretinal response suppression 1	skos:exactMatch	OM
 MONDO:0958181	mitochondrial trifunctional protein deficiency 1	skos:exactMatch	OMIM:609015	mitochondrial trifunctional protein deficiency 1	semapv:ManualMappingCuration
 MONDO:0958182	C1Q deficiency 1	skos:exactMatch	OMIM:613652	c1q deficiency 1	semapv:ManualMappingCuration
 MONDO:0958183	Leber-like hereditary optic neuropathy, autosomal recessive 1	skos:exactMatch	OMIM:619382	leber-like hereditary optic neuropathy, autosomal recessive 1	semapv:ManualMappingCuration
-MONDO:0958184	epidermolytic hyperkeratosis 2	skos:exactMatch	OMIM:620150	epidermolytic hyperkeratosis 2	semapv:ManualMappingCuration
 MONDO:0958185	mitochondrial trifunctional protein deficiency 2	skos:exactMatch	OMIM:620300	mitochondrial trifunctional protein deficiency 2	semapv:ManualMappingCuration
 MONDO:0958186	hematuria, benign familial, 2	skos:exactMatch	OMIM:620320	hematuria, benign familial, 2	semapv:ManualMappingCuration
 MONDO:0958187	C1Q deficiency 2	skos:exactMatch	OMIM:620321	c1q deficiency 2	semapv:ManualMappingCuration
@@ -9742,12 +9745,57 @@ MONDO:0958196	epilepsy, early-onset, 3, with or without developmental delay	skos
 MONDO:0958197	Leber-like hereditary optic neuropathy, autosomal recessive 2	skos:exactMatch	OMIM:620569	leber-like hereditary optic neuropathy, autosomal recessive 2	semapv:ManualMappingCuration
 MONDO:0958199	myoclonic epilepsy of Lafora 1	skos:exactMatch	OMIM:254780	myoclonic epilepsy of lafora 1	semapv:ManualMappingCuration
 MONDO:0958200	intellectual developmental disorder, x-linked 113	skos:exactMatch	OMIM:301116		semapv:ManualMappingCuration
-MONDO:0958201	myoclonic epilepsy of Lafora 2	skos:exactMatch	OMIM:620681	myoclonic epilepsy of lafora 2	semapv:ManualMappingCuration
 MONDO:0958202	moyamoya disease 7	skos:exactMatch	OMIM:620687		semapv:ManualMappingCuration
 MONDO:0958203	intellectual developmental disorder, autosomal dominant 74	skos:exactMatch	OMIM:620688		semapv:ManualMappingCuration
 MONDO:0958204	intellectual developmental disorder, autosomal recessive 81	skos:exactMatch	OMIM:620700		semapv:ManualMappingCuration
 MONDO:0958205	Yuksel-Vogel-Bauer syndrome	skos:exactMatch	OMIM:620703		semapv:ManualMappingCuration
 MONDO:0958206	spermatogenic failure 89	skos:exactMatch	OMIM:620705		semapv:ManualMappingCuration
+MONDO:0958224	encephalopathy, porphyria-related	skos:exactMatch	OMIM:620704		semapv:ManualMappingCuration
+MONDO:0958226	leukoencephalopathy, porphyria-related	skos:exactMatch	OMIM:620711		semapv:ManualMappingCuration
+MONDO:0958227	polydactyly-macrocephaly syndrome	skos:exactMatch	OMIM:620712		semapv:ManualMappingCuration
+MONDO:0958228	hearing loss, autosomal recessive 122	skos:exactMatch	OMIM:620714		semapv:ManualMappingCuration
+MONDO:0958229	bleeding disorder, vascular-type	skos:exactMatch	OMIM:620715		semapv:ManualMappingCuration
+MONDO:0958230	orofaciodigital syndrome 20	skos:exactMatch	OMIM:620718		semapv:ManualMappingCuration
+MONDO:0958231	neurodevelopmental disorder with motor abnormalities, seizures, and facial dysmorphism	skos:exactMatch	OMIM:620719		semapv:ManualMappingCuration
+MONDO:0958232	hearing loss, autosomal dominant 90	skos:exactMatch	OMIM:620722		semapv:ManualMappingCuration
+MONDO:0958233	Bethlem myopathy 1B	skos:exactMatch	OMIM:620725		semapv:ManualMappingCuration
+MONDO:0958234	Bethlem myopathy 1C	skos:exactMatch	OMIM:620726		semapv:ManualMappingCuration
+MONDO:0958235	Ullrich congenital muscular dystrophy 1B	skos:exactMatch	OMIM:620727		semapv:ManualMappingCuration
+MONDO:0958236	Ullrich congenital muscular dystrophy 1C	skos:exactMatch	OMIM:620728		semapv:ManualMappingCuration
+MONDO:0958237	isolated hyperferritinemia	skos:exactMatch	OMIM:620729		semapv:ManualMappingCuration
+MONDO:0958238	hyperemesis gravidarum, susceptibility to	skos:exactMatch	OMIM:620730		semapv:ManualMappingCuration
+MONDO:0958239	microphthalmia/coloboma 11	skos:exactMatch	OMIM:620731		semapv:ManualMappingCuration
+MONDO:0958240	neurodevelopmental disorder with hyperkinetic movements, seizures, and structural brain abnormalities	skos:exactMatch	OMIM:620732		semapv:ManualMappingCuration
+MONDO:0958241	cardiomyopathy, familial hypertrophic, 30, atrial	skos:exactMatch	OMIM:620734		semapv:ManualMappingCuration
+MONDO:0958242	spermatogenic failure 90	skos:exactMatch	OMIM:620744		semapv:ManualMappingCuration
+MONDO:0958277	hearing loss, autosomal recessive 123	skos:exactMatch	OMIM:620745		semapv:ManualMappingCuration
+MONDO:0958278	neurodevelopmental disorder with hypotonia and characteristic brain abnormalities	skos:exactMatch	OMIM:620746		semapv:ManualMappingCuration
+MONDO:0958279	megalencephaly-polydactyly syndrome	skos:exactMatch	OMIM:620748		semapv:ManualMappingCuration
+MONDO:0958322	intellectual developmental disorder, x-linked, syndromic 37	skos:exactMatch	OMIM:301118		semapv:ManualMappingCuration
+MONDO:0958323	neurodevelopmental disorder with early-onset parkinsonism and behavioral abnormalities	skos:exactMatch	OMIM:620747		semapv:ManualMappingCuration
+MONDO:0958324	generalized epilepsy with febrile seizures plus, type 12	skos:exactMatch	OMIM:620755		semapv:ManualMappingCuration
+MONDO:0958325	thrombocytopenia 12 with or without myopathy	skos:exactMatch	OMIM:620757		semapv:ManualMappingCuration
+MONDO:0958326	macular dystrophy with or without cone dysfunction	skos:exactMatch	OMIM:620762		semapv:ManualMappingCuration
+MONDO:0958328	Seckel syndrome 11	skos:exactMatch	OMIM:620767		semapv:ManualMappingCuration
+MONDO:0958329	Jeffries-Lakhani neurodevelopmental syndrome	skos:exactMatch	OMIM:620771		semapv:ManualMappingCuration
+MONDO:0958330	developmental and epileptic encephalopathy 113	skos:exactMatch	OMIM:620772		semapv:ManualMappingCuration
+MONDO:0958331	developmental and epileptic encephalopathy 114	skos:exactMatch	OMIM:620774		semapv:ManualMappingCuration
+MONDO:0958332	neuromuscular disorder, congenital, with dysmorphic facies	skos:exactMatch	OMIM:620775		semapv:ManualMappingCuration
+MONDO:0958333	thrombocytopenia 13, syndromic	skos:exactMatch	OMIM:620776		semapv:ManualMappingCuration
+MONDO:0958334	pulmonary hypertension, primary, 6	skos:exactMatch	OMIM:620777		semapv:ManualMappingCuration
+MONDO:0958335	cutis laxa, autosomal recessive, type 1d	skos:exactMatch	OMIM:620780		semapv:ManualMappingCuration
+MONDO:0968944	intellectual developmental disorder, autosomal recessive 82	skos:exactMatch	OMIM:620779		semapv:ManualMappingCuration
+MONDO:0968945	neurodevelopmental disorder with language impairment, autism, and attention deficit-hyperactivity disorder	skos:exactMatch	OMIM:620782		semapv:ManualMappingCuration
+MONDO:0968946	developmental and epileptic encephalopathy 115	skos:exactMatch	OMIM:620783		semapv:ManualMappingCuration
+MONDO:0968947	neurodevelopmental disorder plus optic atrophy	skos:exactMatch	OMIM:620784		semapv:ManualMappingCuration
+MONDO:0968976	neurodevelopmental disorder with progressive movement abnormalities	skos:exactMatch	OMIM:620785		semapv:ManualMappingCuration
+MONDO:0968977	basal ganglia calcification, idiopathic, 9, autosomal recessive	skos:exactMatch	OMIM:620786		semapv:ManualMappingCuration
+MONDO:0968978	aplasia cutis-enamel dysplasia syndrome	skos:exactMatch	OMIM:620789		semapv:ManualMappingCuration
+MONDO:0968979	neurodevelopmental disorder with hypotonia and seizures	skos:exactMatch	OMIM:620790		semapv:ManualMappingCuration
+MONDO:0968980	otosclerosis 12	skos:exactMatch	OMIM:620792		semapv:ManualMappingCuration
+MONDO:0968981	autosomal recessive nonsyndromic hearing loss 124	skos:exactMatch	OMIM:620794		semapv:ManualMappingCuration
+MONDO:0968982	autoinflammation with episodic fever and immune dysregulation	skos:exactMatch	OMIM:620795		semapv:ManualMappingCuration
+MONDO:0968983	proteasome-associated autoinflammatory syndrome 6	skos:exactMatch	OMIM:620796		semapv:ManualMappingCuration
 MONDO:8000006	WHIM syndrome 1	skos:exactMatch	OMIM:193670	whim syndrome 1	semapv:ManualMappingCuration
 MONDO:8000008	Martsolf syndrome 1	skos:exactMatch	OMIM:212720	martsolf syndrome 1	semapv:ManualMappingCuration
 MONDO:8000011	visceral neuropathy, familial, 1, autosomal recessive	skos:exactMatch	OMIM:243180	visceral neuropathy, familial, 1, autosomal recessive	semapv:ManualMappingCuration

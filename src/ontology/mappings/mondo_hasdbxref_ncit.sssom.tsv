@@ -11,7 +11,7 @@
 # license: https://creativecommons.org/publicdomain/zero/1.0/
 # mapping_date: '2018-06-14'
 # mapping_set_id: http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_ncit.sssom.tsv
-# mapping_set_version: http://purl.obolibrary.org/obo/mondo/releases/2024-03-04/mappings/mondo_hasdbxref_ncit.sssom.tsv
+# mapping_set_version: http://purl.obolibrary.org/obo/mondo/releases/2024-06-04/mappings/mondo_hasdbxref_ncit.sssom.tsv
 # object_source: http://purl.obolibrary.org/obo/ncit.owl
 # object_source_version: http://purl.obolibrary.org/obo/ncit/releases/2018-06-14/ncit.owl
 # subject_source: http://purl.obolibrary.org/obo/mondo.owl
@@ -606,7 +606,6 @@ MONDO:0001992	rete testis adenocarcinoma	oboInOwl:hasDbXref	NCIT:C8955	Rete Test
 MONDO:0001993	seminal vesicle adenocarcinoma	oboInOwl:hasDbXref	NCIT:C39906	Seminal Vesicle Adenocarcinoma	semapv:ManualMappingCuration
 MONDO:0001994	sphenoidal sinus cancer	oboInOwl:hasDbXref	NCIT:C3543	Malignant Sphenoid Sinus Neoplasm	semapv:ManualMappingCuration
 MONDO:0001995	sphenoid sinus squamous cell carcinoma	oboInOwl:hasDbXref	NCIT:C6066	Sphenoid Sinus Squamous Cell Carcinoma	semapv:ManualMappingCuration
-MONDO:0002003	papilledema	oboInOwl:hasDbXref	NCIT:C3307	Papilledema	semapv:ManualMappingCuration
 MONDO:0002008	labyrinthitis	oboInOwl:hasDbXref	NCIT:C128369	Labyrinthitis	semapv:ManualMappingCuration
 MONDO:0002009	major depressive disorder	oboInOwl:hasDbXref	NCIT:C35094	Unipolar Depression	semapv:ManualMappingCuration
 MONDO:0002012	methylmalonic acidemia	oboInOwl:hasDbXref	NCIT:C98986	Methylmalonic Acidemia	semapv:ManualMappingCuration
@@ -811,7 +810,6 @@ MONDO:0002329	testicular disorder	oboInOwl:hasDbXref	NCIT:C26890	Testicular Diso
 MONDO:0002332	splenic disorder	oboInOwl:hasDbXref	NCIT:C35823	Splenic Disorder	semapv:ManualMappingCuration
 MONDO:0002333	splenic abscess	oboInOwl:hasDbXref	NCIT:C35347	Splenic Abscess	semapv:ManualMappingCuration
 MONDO:0002334	hematopoietic and lymphoid system neoplasm	oboInOwl:hasDbXref	NCIT:C35813	Hematopoietic and Lymphoid System Neoplasm	semapv:ManualMappingCuration
-MONDO:0002335	chronic inflammatory demyelinating polyneuritis	oboInOwl:hasDbXref	NCIT:C84636	Chronic Inflammatory Demyelinating Polyneuropathy	semapv:ManualMappingCuration
 MONDO:0002337	intra-abdominal hemangioma	oboInOwl:hasDbXref	NCIT:C3635	Intra-Abdominal Hemangioma	semapv:ManualMappingCuration
 MONDO:0002338	extratemporal epilepsy	oboInOwl:hasDbXref	NCIT:C7760	Extratemporal Epilepsy	semapv:ManualMappingCuration
 MONDO:0002340	tactile epilepsy	oboInOwl:hasDbXref	NCIT:C4687	Tactile Epilepsy	semapv:ManualMappingCuration
@@ -1152,7 +1150,6 @@ MONDO:0002795	adult central nervous system primitive neuroectodermal neoplasm	ob
 MONDO:0002796	melanotic medulloblastoma	oboInOwl:hasDbXref	NCIT:C9497	Melanocytic Medulloblastoma	semapv:ManualMappingCuration
 MONDO:0002797	childhood medulloblastoma	oboInOwl:hasDbXref	NCIT:C3997	Childhood Medulloblastoma	semapv:ManualMappingCuration
 MONDO:0002798	childhood central nervous system primitive neuroectodermal neoplasm	oboInOwl:hasDbXref	NCIT:C5961	Childhood Central Nervous System Embryonal Tumor, Not Otherwise Specified	semapv:ManualMappingCuration
-MONDO:0002799	nodular medulloblastoma	oboInOwl:hasDbXref	NCIT:C5407	Medulloblastoma with Extensive Nodularity	semapv:ManualMappingCuration
 MONDO:0002800	thrombophlebitis	oboInOwl:hasDbXref	NCIT:C3410	Thrombophlebitis	semapv:ManualMappingCuration
 MONDO:0002803	intestinal pseudo-obstruction	oboInOwl:hasDbXref	NCIT:C34733	Intestinal Pseudo-Obstruction	semapv:ManualMappingCuration
 MONDO:0002804	apocrine adenoma	oboInOwl:hasDbXref	NCIT:C4168	Apocrine Adenoma	semapv:ManualMappingCuration
@@ -1726,7 +1723,6 @@ MONDO:0003535	fallopian tube papillary adenocarcinoma	oboInOwl:hasDbXref	NCIT:C6
 MONDO:0003537	precursor T-lymphoblastic lymphoma/leukemia	oboInOwl:hasDbXref	NCIT:C8694	T Lymphoblastic Leukemia/Lymphoma	semapv:ManualMappingCuration
 MONDO:0003538	precursor lymphoblastic lymphoma/leukemia	oboInOwl:hasDbXref	NCIT:C7055	Precursor Lymphoid Neoplasm	semapv:ManualMappingCuration
 MONDO:0003539	T-cell adult acute lymphocytic leukemia	oboInOwl:hasDbXref	NCIT:C9142	Adult T Acute Lymphoblastic Leukemia	semapv:ManualMappingCuration
-MONDO:0003540	acute T cell leukemia	oboInOwl:hasDbXref	NCIT:C3184	Adult T-Cell Leukemia/Lymphoma	semapv:ManualMappingCuration
 MONDO:0003541	adult acute lymphoblastic leukemia	oboInOwl:hasDbXref	NCIT:C4967	Adult Acute Lymphoblastic Leukemia	semapv:ManualMappingCuration
 MONDO:0003543	trigeminal nerve disorder	oboInOwl:hasDbXref	NCIT:C26952	Trigeminal Nerve Disorder	semapv:ManualMappingCuration
 MONDO:0003544	spinal cord cancer	oboInOwl:hasDbXref	NCIT:C3572	Malignant Spinal Cord Neoplasm	semapv:ManualMappingCuration
@@ -1793,7 +1789,6 @@ MONDO:0003622	pancreatic vasoactive intestinal peptide producing tumor	oboInOwl:
 MONDO:0003624	acinic cell breast carcinoma	oboInOwl:hasDbXref	NCIT:C40367	Breast Acinic Cell Carcinoma	semapv:ManualMappingCuration
 MONDO:0003626	uterine ligament serous adenocarcinoma	oboInOwl:hasDbXref	NCIT:C40136	Uterine Ligament Serous Adenocarcinoma	semapv:ManualMappingCuration
 MONDO:0003628	pulmonary valve disorder	oboInOwl:hasDbXref	NCIT:C78579	Pulmonary Valve Disorder	semapv:ManualMappingCuration
-MONDO:0003629	uterine corpus serous adenocarcinoma	oboInOwl:hasDbXref	NCIT:C27838	Endometrial Serous Adenocarcinoma	semapv:ManualMappingCuration
 MONDO:0003630	pancreatic serous cystadenocarcinoma	oboInOwl:hasDbXref	NCIT:C5724	Pancreatic Serous Cystadenocarcinoma	semapv:ManualMappingCuration
 MONDO:0003631	cervical serous adenocarcinoma	oboInOwl:hasDbXref	NCIT:C40201	Cervical Serous Adenocarcinoma	semapv:ManualMappingCuration
 MONDO:0003632	endocervicitis	oboInOwl:hasDbXref	NCIT:C26762	Endocervicitis	semapv:ManualMappingCuration
@@ -2680,6 +2675,7 @@ MONDO:0004726	liver inflammatory myofibroblastic tumor	oboInOwl:hasDbXref	NCIT:C
 MONDO:0004730	speech disorder	oboInOwl:hasDbXref	NCIT:C5041	Speech Disorder	semapv:ManualMappingCuration
 MONDO:0004731	central sleep apnea syndrome	oboInOwl:hasDbXref	NCIT:C27169	Central Sleep Apnea Syndrome	semapv:ManualMappingCuration
 MONDO:0004733	pyriform sinus cancer	oboInOwl:hasDbXref	NCIT:C3531	Malignant Pyriform Fossa Neoplasm	semapv:ManualMappingCuration
+MONDO:0004736	inborn disorder of amino acid metabolism	oboInOwl:hasDbXref	NCIT:C97090	Amino Acid Metabolism Disorder	semapv:ManualMappingCuration
 MONDO:0004737	homocystinuria	oboInOwl:hasDbXref	NCIT:C84765	Homocystinuria	semapv:ManualMappingCuration
 MONDO:0004739	urea cycle disorder	oboInOwl:hasDbXref	NCIT:C84785	Urea Cycle Metabolism Disorder	semapv:ManualMappingCuration
 MONDO:0004741	tyrosinemia	oboInOwl:hasDbXref	NCIT:C98640	Tyrosinemia	semapv:ManualMappingCuration
@@ -2949,8 +2945,8 @@ MONDO:0005185	chronic childhood arthritis	oboInOwl:hasDbXref	NCIT:C27179	Juvenil
 MONDO:0005186	cocaine dependence	oboInOwl:hasDbXref	NCIT:C34492	Cocaine Dependence	semapv:ManualMappingCuration
 MONDO:0005187	human herpesvirus 8 infection	oboInOwl:hasDbXref	NCIT:C39291	HHV8 Infection	semapv:ManualMappingCuration
 MONDO:0005188	iatrogenic Kaposi's sarcoma	oboInOwl:hasDbXref	NCIT:C35873	Iatrogenic Kaposi Sarcoma	semapv:ManualMappingCuration
-MONDO:0005190	macroglobulinemia	oboInOwl:hasDbXref	NCIT:C3212	Lymphoplasmacytic Lymphoma	semapv:ManualMappingCuration
-MONDO:0005190	macroglobulinemia	oboInOwl:hasDbXref	NCIT:C80307	Waldenstrom Macroglobulinemia	semapv:ManualMappingCuration
+MONDO:0005190	obsolete macroglobulinemia	oboInOwl:hasDbXref	NCIT:C3212	Lymphoplasmacytic Lymphoma	semapv:ManualMappingCuration
+MONDO:0005190	obsolete macroglobulinemia	oboInOwl:hasDbXref	NCIT:C80307	Waldenstrom Macroglobulinemia	semapv:ManualMappingCuration
 MONDO:0005191	metastatic melanoma	oboInOwl:hasDbXref	NCIT:C8925	Metastatic Melanoma	semapv:ManualMappingCuration
 MONDO:0005192	exocrine pancreatic carcinoma	oboInOwl:hasDbXref	NCIT:C3850	Pancreatic Carcinoma	semapv:ManualMappingCuration
 MONDO:0005193	prostate intraepithelial neoplasia	oboInOwl:hasDbXref	NCIT:C4064	Prostatic Intraepithelial Neoplasia	semapv:ManualMappingCuration
@@ -3309,7 +3305,7 @@ MONDO:0005858	mucinous cystadenocarcinoma	oboInOwl:hasDbXref	NCIT:C3776	Mucinous
 MONDO:0005859	mucocutaneous leishmaniasis	oboInOwl:hasDbXref	NCIT:C34769	American Cutaneous Leishmaniasis	semapv:ManualMappingCuration
 MONDO:0005861	multidrug-resistant tuberculosis	oboInOwl:hasDbXref	NCIT:C128415	Multidrug-Resistant Tuberculosis	semapv:ManualMappingCuration
 MONDO:0005864	muscle cancer	oboInOwl:hasDbXref	NCIT:C4883	Malignant Muscle Neoplasm	semapv:ManualMappingCuration
-MONDO:0005866	mycobacterium avium complex disease	oboInOwl:hasDbXref	NCIT:C36197	Mycobacterium Avium Infection	semapv:ManualMappingCuration
+MONDO:0005866	Mycobacterium avium complex disease	oboInOwl:hasDbXref	NCIT:C36197	Mycobacterium Avium Infection	semapv:ManualMappingCuration
 MONDO:0005867	Mycoplasma pneumoniae pneumonia	oboInOwl:hasDbXref	NCIT:C122526	Mycoplasmal Pneumonia	semapv:ManualMappingCuration
 MONDO:0005868	myelophthisic anemia	oboInOwl:hasDbXref	NCIT:C36218	Leukoerythroblastic Reaction	semapv:ManualMappingCuration
 MONDO:0005870	necatoriasis	oboInOwl:hasDbXref	NCIT:C34838	Necatoriasis	semapv:ManualMappingCuration
@@ -3645,7 +3641,6 @@ MONDO:0006357	parotid gland carcinoma ex pleomorphic adenoma	oboInOwl:hasDbXref	
 MONDO:0006358	parotid gland squamous cell carcinoma	oboInOwl:hasDbXref	NCIT:C5942	Parotid Gland Squamous Cell Carcinoma	semapv:ManualMappingCuration
 MONDO:0006359	neoplasm with perivascular epithelioid cell differentiation	oboInOwl:hasDbXref	NCIT:C38150	PEComa	semapv:ManualMappingCuration
 MONDO:0006360	penile carcinoma	oboInOwl:hasDbXref	NCIT:C9061	Penile Carcinoma	semapv:ManualMappingCuration
-MONDO:0006361	penile fibromatosis	oboInOwl:hasDbXref	NCIT:C3316	Penile Fibromatosis	semapv:ManualMappingCuration
 MONDO:0006362	peritoneal mesothelioma	oboInOwl:hasDbXref	NCIT:C7633	Peritoneal Mesothelial Neoplasm	semapv:ManualMappingCuration
 MONDO:0006363	peritoneal multicystic mesothelioma	oboInOwl:hasDbXref	NCIT:C6536	Peritoneal Multicystic Mesothelioma	semapv:ManualMappingCuration
 MONDO:0006364	peritoneal well differentiated papillary mesothelioma	oboInOwl:hasDbXref	NCIT:C45661	Peritoneal Well Differentiated Papillary Mesothelial Tumor	semapv:ManualMappingCuration
@@ -4032,7 +4027,6 @@ MONDO:0007203	blue rubber bleb nevus	oboInOwl:hasDbXref	NCIT:C4486	Blue Rubber B
 MONDO:0007205	diaphyseal medullary stenosis-bone malignancy syndrome	oboInOwl:hasDbXref	NCIT:C122660	Hardcastle's Syndrome	semapv:ManualMappingCuration
 MONDO:0007233	second branchial cleft anomaly	oboInOwl:hasDbXref	NCIT:C104813	Branchial Cleft Remnant	semapv:ManualMappingCuration
 MONDO:0007238	amastia	oboInOwl:hasDbXref	NCIT:C118459	Amastia	semapv:ManualMappingCuration
-MONDO:0007239	epidermolytic ichthyosis	oboInOwl:hasDbXref	NCIT:C62569	Epidermolytic Ichthyosis	semapv:ManualMappingCuration
 MONDO:0007240	progressive familial heart block, type 1A	oboInOwl:hasDbXref	NCIT:C126651	Progressive Familial Heart Block, Type Ia	semapv:ManualMappingCuration
 MONDO:0007243	Burkitt lymphoma	oboInOwl:hasDbXref	NCIT:C2912	Burkitt Lymphoma	semapv:ManualMappingCuration
 MONDO:0007244	Caffey disease	oboInOwl:hasDbXref	NCIT:C118423	Infantile Cortical Hyperostosis	semapv:ManualMappingCuration
@@ -4088,7 +4082,7 @@ MONDO:0007488	Lewy body dementia	oboInOwl:hasDbXref	NCIT:C84826	Lewy Body Dement
 MONDO:0007492	early-onset generalized limb-onset dystonia	oboInOwl:hasDbXref	NCIT:C116718	Early Onset Primary Dystonia	semapv:ManualMappingCuration
 MONDO:0007496	dystonia 12	oboInOwl:hasDbXref	NCIT:C157577	Dystonia 12	semapv:ManualMappingCuration
 MONDO:0007523	Ehlers-Danlos syndrome, hypermobility type	oboInOwl:hasDbXref	NCIT:C125698	Ehlers-Danlos Syndrome, Type III	semapv:ManualMappingCuration
-MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasis type	oboInOwl:hasDbXref	NCIT:C125701	Ehlers-Danlos Syndrome, Type VII	semapv:ManualMappingCuration
+MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasia type	oboInOwl:hasDbXref	NCIT:C125701	Ehlers-Danlos Syndrome, Type VII	semapv:ManualMappingCuration
 MONDO:0007534	Beckwith-Wiedemann syndrome	oboInOwl:hasDbXref	NCIT:C34415	Beckwith-Wiedemann Syndrome	semapv:ManualMappingCuration
 MONDO:0007536	congenital lobar emphysema	oboInOwl:hasDbXref	NCIT:C98895	Congenital Lobar Emphysema	semapv:ManualMappingCuration
 MONDO:0007540	multiple endocrine neoplasia type 1	oboInOwl:hasDbXref	NCIT:C3225	Multiple Endocrine Neoplasia Type 1	semapv:ManualMappingCuration
@@ -4133,7 +4127,7 @@ MONDO:0007739	Huntington disease	oboInOwl:hasDbXref	NCIT:C82342	Huntington's Dis
 MONDO:0007741	congenital hydronephrosis	oboInOwl:hasDbXref	NCIT:C102979	Congenital Hydronephrosis	semapv:ManualMappingCuration
 MONDO:0007743	attention deficit-hyperactivity disorder	oboInOwl:hasDbXref	NCIT:C97160	Attention Deficit Hyperactivity Disorder	semapv:ManualMappingCuration
 MONDO:0007745	Gilbert syndrome	oboInOwl:hasDbXref	NCIT:C84729	Gilbert Syndrome	semapv:ManualMappingCuration
-MONDO:0007758	epidermolytic palmoplantar keratoderma	oboInOwl:hasDbXref	NCIT:C84693	Epidermolytic Palmoplantar Keratoderma	semapv:ManualMappingCuration
+MONDO:0007758	epidermolytic palmoplantar keratoderma, 1	oboInOwl:hasDbXref	NCIT:C84693	Epidermolytic Palmoplantar Keratoderma	semapv:ManualMappingCuration
 MONDO:0007766	Morgagni-Stewart-Morel syndrome	oboInOwl:hasDbXref	NCIT:C84772	Hyperostosis Frontalis Interna	semapv:ManualMappingCuration
 MONDO:0007768	hyperparathyroidism 2 with jaw tumors	oboInOwl:hasDbXref	NCIT:C48287	Hyperparathyroidism-Jaw Tumor Syndrome	semapv:ManualMappingCuration
 MONDO:0007778	obsolete hypertelorism	oboInOwl:hasDbXref	NCIT:C34715	Hypertelorism	semapv:ManualMappingCuration
@@ -4852,7 +4846,7 @@ MONDO:0011377	long QT syndrome 3	oboInOwl:hasDbXref	NCIT:C137959	Long QT Syndrom
 MONDO:0011382	sickle cell anemia	oboInOwl:hasDbXref	NCIT:C34383	Sickle Cell Disease	semapv:ManualMappingCuration
 MONDO:0011383	autoimmune lymphoproliferative syndrome type 2A	oboInOwl:hasDbXref	NCIT:C39576	Autoimmune Lymphoproliferative Syndrome with Germline CASP10 Mutation	semapv:ManualMappingCuration
 MONDO:0011385	intervertebral disk degenerative disorder	oboInOwl:hasDbXref	NCIT:C26983	Intervertebral Disc Degenerative Disorder	semapv:ManualMappingCuration
-MONDO:0011399	alpha thalassemia	oboInOwl:hasDbXref	NCIT:C34368	Alpha Thalassemia	semapv:ManualMappingCuration
+MONDO:0011399	alpha thalassemia spectrum	oboInOwl:hasDbXref	NCIT:C34368	Alpha Thalassemia	semapv:ManualMappingCuration
 MONDO:0011405	poikiloderma with neutropenia	oboInOwl:hasDbXref	NCIT:C177535	Poikiloderma with Neutropenia	semapv:ManualMappingCuration
 MONDO:0011424	Carney triad	oboInOwl:hasDbXref	NCIT:C94833	Carney Triad	semapv:ManualMappingCuration
 MONDO:0011429	juvenile idiopathic arthritis	oboInOwl:hasDbXref	NCIT:C114357	Juvenile Idiopathic Arthritis	semapv:ManualMappingCuration
@@ -5072,7 +5066,7 @@ MONDO:0013364	Rubinstein-Taybi syndrome due to EP300 haploinsufficiency	oboInOwl
 MONDO:0013367	long QT syndrome 2	oboInOwl:hasDbXref	NCIT:C137957	Long QT Syndrome 2	semapv:ManualMappingCuration
 MONDO:0013372	long QT syndrome 5	oboInOwl:hasDbXref	NCIT:C172094	Long QT Syndrome 5	semapv:ManualMappingCuration
 MONDO:0013379	Noonan syndrome 7	oboInOwl:hasDbXref	NCIT:C176935	Noonan Syndrome 7	semapv:ManualMappingCuration
-MONDO:0013400	Congenital adrenal insuffiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency	oboInOwl:hasDbXref	NCIT:C131422	Cholesterol Side-Chain Cleavage Deficiency	semapv:ManualMappingCuration
+MONDO:0013400	Congenital adrenal insufficiency with 46, XY sex reversal OR 46,XY disorder of sex development-adrenal insufficiency due to CYP11A1 deficiency	oboInOwl:hasDbXref	NCIT:C131422	Cholesterol Side-Chain Cleavage Deficiency	semapv:ManualMappingCuration
 MONDO:0013417	complement component 3 deficiency	oboInOwl:hasDbXref	NCIT:C9468	C3 Deficiency	semapv:ManualMappingCuration
 MONDO:0013424	3p- syndrome	oboInOwl:hasDbXref	NCIT:C41377	del(3p25)	semapv:ManualMappingCuration
 MONDO:0013434	primary ciliary dyskinesia 14	oboInOwl:hasDbXref	NCIT:C148370	Primary Ciliary Dyskinesia 14	semapv:ManualMappingCuration
@@ -5108,7 +5102,7 @@ MONDO:0013829	UV-sensitive syndrome 2	oboInOwl:hasDbXref	NCIT:C173110	UV-Sensiti
 MONDO:0013834	UV-sensitive syndrome 3	oboInOwl:hasDbXref	NCIT:C173107	UV-Sensitive Syndrome 3	semapv:ManualMappingCuration
 MONDO:0013842	cortisone reductase deficiency 2	oboInOwl:hasDbXref	NCIT:C131084	11-Beta-Hydroxysteroid Dehydrogenase Type 1 Deficiency	semapv:ManualMappingCuration
 MONDO:0013860	idiopathic membranous glomerulonephritis	oboInOwl:hasDbXref	NCIT:C123060	Membranous Nephropathy - Idiopathic	semapv:ManualMappingCuration
-MONDO:0013867	brown-Vialetto-van Laere syndrome 2	oboInOwl:hasDbXref	NCIT:C183529	Brown-Vialetto-Van Laere Syndrome 2	semapv:ManualMappingCuration
+MONDO:0013867	Brown-Vialetto-van Laere syndrome 2	oboInOwl:hasDbXref	NCIT:C183529	Brown-Vialetto-Van Laere Syndrome 2	semapv:ManualMappingCuration
 MONDO:0013869	adenine phosphoribosyltransferase deficiency	oboInOwl:hasDbXref	NCIT:C121564	Adenine Phosphoribosyltransferase Deficiency	semapv:ManualMappingCuration
 MONDO:0013873	IMAGe syndrome	oboInOwl:hasDbXref	NCIT:C130988	IMAGe Syndrome	semapv:ManualMappingCuration
 MONDO:0013874	glucocorticoid deficiency 4	oboInOwl:hasDbXref	NCIT:C131452	Familial Glucocorticoid Deficiency Type 4	semapv:ManualMappingCuration
@@ -5145,7 +5139,7 @@ MONDO:0014378	primary ciliary dyskinesia 29	oboInOwl:hasDbXref	NCIT:C172393	Prim
 MONDO:0014448	hyperthyroxinemia, familial dysalbuminemic	oboInOwl:hasDbXref	NCIT:C131813	Familial Dysalbuminemic Hyperthyroidism	semapv:ManualMappingCuration
 MONDO:0014449	congenital analbuminemia	oboInOwl:hasDbXref	NCIT:C124851	Analbuminemia	semapv:ManualMappingCuration
 MONDO:0014452	familial dysfibrinogenemia	oboInOwl:hasDbXref	NCIT:C131659	Dysfibrinogenemia	semapv:ManualMappingCuration
-MONDO:0014493	autoimmune lymphoproliferative syndrome due to CTLA4 haploinsuffiency	oboInOwl:hasDbXref	NCIT:C126341	CTLA4 Deficiency	semapv:ManualMappingCuration
+MONDO:0014493	autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency	oboInOwl:hasDbXref	NCIT:C126341	CTLA4 Deficiency	semapv:ManualMappingCuration
 MONDO:0014521	progressive myoclonic epilepsy type 7	oboInOwl:hasDbXref	NCIT:C142804	Epilepsy, Progressive Myoclonic 7	semapv:ManualMappingCuration
 MONDO:0014541	motor developmental delay due to 14q32.2 paternally expressed gene defect	oboInOwl:hasDbXref	NCIT:C120409	Maternal Uniparental Disomy Chromosome 14 Syndrome	semapv:ManualMappingCuration
 MONDO:0014548	long QT syndrome 14	oboInOwl:hasDbXref	NCIT:C177534	Long QT Syndrome 14	semapv:ManualMappingCuration
@@ -5221,6 +5215,7 @@ MONDO:0015288	herpes simplex virus keratitis	oboInOwl:hasDbXref	NCIT:C34743	Dend
 MONDO:0015294	nephrogenic systemic fibrosis	oboInOwl:hasDbXref	NCIT:C84920	Nephrogenic Fibrosing Dermopathy	semapv:ManualMappingCuration
 MONDO:0015304	arachnoiditis	oboInOwl:hasDbXref	NCIT:C37913	Arachnoiditis	semapv:ManualMappingCuration
 MONDO:0015328	obsolete rare bone development disorder	oboInOwl:hasDbXref	NCIT:C34432	Bone Development Disorder	semapv:ManualMappingCuration
+MONDO:0015340	drug rash with eosinophilia and systemic symptoms	oboInOwl:hasDbXref	NCIT:C112208	Drug Hypersensitivity Syndrome	semapv:ManualMappingCuration
 MONDO:0015342	acute transverse myelitis	oboInOwl:hasDbXref	NCIT:C128378	Acute Transverse Myelitis	semapv:ManualMappingCuration
 MONDO:0015347	multicentric reticulohistiocytosis	oboInOwl:hasDbXref	NCIT:C27896	Multicentric Reticulohistiocytosis	semapv:ManualMappingCuration
 MONDO:0015356	hereditary neoplastic syndrome	oboInOwl:hasDbXref	NCIT:C3266	Hereditary Neoplastic Syndrome	semapv:ManualMappingCuration
@@ -6256,6 +6251,7 @@ MONDO:0020694	salivary gland epithelial myoepithelial carcinoma	oboInOwl:hasDbXr
 MONDO:0020695	hypotonic cerebral palsy	oboInOwl:hasDbXref	NCIT:C116906	Hypotonic Cerebral Palsy	semapv:ManualMappingCuration
 MONDO:0020696	vitamin B12 deficiency	oboInOwl:hasDbXref	NCIT:C131684	Vitamin B12 Deficiency	semapv:ManualMappingCuration
 MONDO:0020697	lung epithelial-myoepithelial carcinoma	oboInOwl:hasDbXref	NCIT:C45545	Lung Epithelial-Myoepithelial Carcinoma	semapv:ManualMappingCuration
+MONDO:0020702	autosomal dominant epidermolytic ichthyosis	oboInOwl:hasDbXref	NCIT:C62569	Epidermolytic Ichthyosis	semapv:ManualMappingCuration
 MONDO:0020703	erythroid neoplasm	oboInOwl:hasDbXref	NCIT:C7064	Erythroid Neoplasm	semapv:ManualMappingCuration
 MONDO:0020706	Heberden's node	oboInOwl:hasDbXref	NCIT:C34671	Heberden's Node	semapv:ManualMappingCuration
 MONDO:0020707	central hearing loss	oboInOwl:hasDbXref	NCIT:C34662	Central Hearing Loss	semapv:ManualMappingCuration
@@ -6974,7 +6970,6 @@ MONDO:0037745	fibromyxoid tumor	oboInOwl:hasDbXref	NCIT:C66760	Fibromyxoid Tumor
 MONDO:0037746	malignant vaginal mixed epithelial and mesenchymal neoplasm	oboInOwl:hasDbXref	NCIT:C40276	Malignant Vaginal Mixed Epithelial and Mesenchymal Neoplasm	semapv:ManualMappingCuration
 MONDO:0037748	hyperlipoproteinemia	oboInOwl:hasDbXref	NCIT:C34709	Hyperlipoproteinemia	semapv:ManualMappingCuration
 MONDO:0037858	inherited fatty acid metabolism disorder	oboInOwl:hasDbXref	NCIT:C117115	Fatty Acid Metabolism Disorder	semapv:ManualMappingCuration
-MONDO:0037871	amino acid metabolism disease	oboInOwl:hasDbXref	NCIT:C97090	Amino Acid Metabolism Disorder	semapv:ManualMappingCuration
 MONDO:0040673	malignant peritoneal germ cell tumor	oboInOwl:hasDbXref	NCIT:C136410	Malignant Peritoneal Germ Cell Tumor	semapv:ManualMappingCuration
 MONDO:0040675	myofibroblastoma	oboInOwl:hasDbXref	NCIT:C49012	Myofibroblastoma	semapv:ManualMappingCuration
 MONDO:0040676	great vessel cancer	oboInOwl:hasDbXref	NCIT:C4575	Malignant Great Vessel Neoplasm	semapv:ManualMappingCuration
@@ -7136,7 +7131,6 @@ MONDO:0044872	dysautonomia	oboInOwl:hasDbXref	NCIT:C53439	Dysautonomia	semapv:Ma
 MONDO:0044873	childhood myelodysplastic syndrome	oboInOwl:hasDbXref	NCIT:C68744	Childhood Myelodysplastic Syndrome	semapv:ManualMappingCuration
 MONDO:0044874	refractory cytopenia of childhood	oboInOwl:hasDbXref	NCIT:C82596	Refractory Cytopenia of Childhood	semapv:ManualMappingCuration
 MONDO:0044875	coronary microvascular disorder	oboInOwl:hasDbXref	NCIT:C84478	Coronary Microvascular Disease	semapv:ManualMappingCuration
-MONDO:0044876	drug hypersensitivity syndrome	oboInOwl:hasDbXref	NCIT:C112208	Drug Hypersensitivity Syndrome	semapv:ManualMappingCuration
 MONDO:0044877	paraneoplastic cerebellar degeneration	oboInOwl:hasDbXref	NCIT:C4685	Paraneoplastic Cerebellar Degeneration	semapv:ManualMappingCuration
 MONDO:0044878	adult germ cell tumor	oboInOwl:hasDbXref	NCIT:C114777	Adult Germ Cell Tumor	semapv:ManualMappingCuration
 MONDO:0044879	pancreatic mucinous-cystic neoplasm	oboInOwl:hasDbXref	NCIT:C41247	Pancreatic Mucinous-Cystic Neoplasm	semapv:ManualMappingCuration
