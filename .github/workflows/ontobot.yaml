@@ -116,7 +116,7 @@ jobs:
         id: vars
         run: |
           echo "resource=src/ontology/mondo-edit.obo" >> $GITHUB_ENV
-          echo "branch-name=ochange_automation_"${{ steps.gh-script-issue.outputs.issue_number }} >> $GITHUB_ENV
+          echo "branch-name=ochange_automation_"${{ steps.gh-script-issue.issue_number }} >> $GITHUB_ENV
       
       - name: Install dependencies
         run: |
