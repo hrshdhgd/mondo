@@ -101,7 +101,7 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const issue_number = context.issue.number;
-            return issue_number;
+            return { issue_number: issue_number };
 
       - name: Return repository name
         id: gh-script-repo
@@ -110,7 +110,7 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const repo = context.repo.owner + "/" + context.repo.repo;
-            return repo;
+            return { repo: repo };
 
       - name: Set branch name
         id: vars
@@ -126,8 +126,8 @@ jobs:
         id: ochange
         run: |
           ochange process-issue ${{ env.resource }} \
-          -r ${{ steps.gh-script-repo.outputs.repo }} \
-          -n ${{ steps.gh-script-issue.outputs.issue_number }} \
+          -r ${{ steps.gh-script-repo.repo }} \
+          -n ${{ steps.gh-script-issue.issue_number }} \
           -g ${{ secrets.GH_TOKEN }} \
           -p MONDO \
           -c ${{ needs.check.outputs.commentId }}
