@@ -69,7 +69,7 @@ jobs:
 
       - name: Log phraseExists output
         run: |
-          echo "phraseExists: ${{ steps.check-body.outputs.result }}"
+          echo "phraseExists: ${{ steps.check-body.outputs }}"
           echo "commentId: ${{ steps.check-body.outputs.commentId }}"
     
       - name: Conditional step based on result
