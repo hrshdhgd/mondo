@@ -68,10 +68,7 @@ jobs:
             core.setOutput('commentId', checkResult.commentId);
 
       - name: Log phraseExists output
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log('needs.check.outputs.phraseExists:', '${{ needs.check.outputs.phraseExists }}');
+        run: echo "phraseExists: ${{ steps.check-body.outputs.result }}"
 
   build:
     needs: check
