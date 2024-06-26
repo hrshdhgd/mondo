@@ -101,7 +101,7 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const issue_number = context.issue.number;
-            return { issue_number: issue_number };
+            return issue_number;
 
       - name: Return repository name
         id: gh-script-repo
@@ -110,7 +110,7 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const repo = context.repo.owner + "/" + context.repo.repo;
-            return { repo: repo };
+            return repo;
 
       - name: Set branch name
         id: vars
