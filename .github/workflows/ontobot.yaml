@@ -64,8 +64,10 @@ jobs:
             console.log(`Comment ID: ${checkResult.commentId}`);
             console.log(`Check Result: ${JSON.stringify(checkResult)}`);
 
-            core.setOutput('result', checkResult.result);
-            core.setOutput('commentId', checkResult.commentId);
+            return {
+              result: checkResult.result,
+              commentId: checkResult.commentId
+            };
   
   build:
     needs: check
