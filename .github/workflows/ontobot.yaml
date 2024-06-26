@@ -68,7 +68,8 @@ jobs:
             core.setOutput('commentId', checkResult.commentId);
 
       - name: Log phraseExists output
-        run: echo "phraseExists: ${{ steps.check-body.outputs.result }}"
+        run: |
+          echo "phraseExists: ${{ steps.check-body.outputs.result }}"
 
   build:
     needs: check
