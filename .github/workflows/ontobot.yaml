@@ -70,13 +70,13 @@ jobs:
             };
   
   build:
-    needs: check
-    if: needs.check.outputs.phraseExists == 'true'
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        python-version: ["3.9"]
-        os: [ ubuntu-latest ]
+      needs: check
+      if: needs.check.outputs.phraseExists == 'true'
+      runs-on: ${{ matrix.os }}
+      strategy:
+        matrix:
+          python-version: ["3.9"]
+          os: [ ubuntu-latest ]
 
     steps:
       - uses: actions/checkout@v3
