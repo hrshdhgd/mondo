@@ -118,17 +118,24 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install ontobot-change-agent==0.4.10rc1
+          pip install ontobot-change-agent
 
       - name: Run ochange
         id: ochange
         run: |
-          ochange process-issue ${{ env.resource }} \
-          -r ${{ steps.gh-script-repo.outputs.result }} \
-          -n ${{ steps.gh-script-issue.outputs.result }} \
+          cmd="ochange process-issue ${{ env.resource }} \
+          -r ${{ steps.gh-script-repo.outputs.repo }} \
+          -n ${{ steps.gh-script-issue.outputs.issue_number }} \
           -g ${{ secrets.GH_TOKEN }} \
-          -p MONDO \
-          -c ${{ needs.check.outputs.commentId }}
+          -p MONDO"
+
+          if [ "${{ needs.check.outputs.commentId }}" != "null" ]; then
+            cmd="$cmd -c ${{ needs.check.outputs.commentId }}"
+          fi
+
+          echo "Running command: $cmd"
+          eval $cmd
+
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
