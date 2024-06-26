@@ -64,10 +64,6 @@ jobs:
             console.log(`Comment ID: ${checkResult.commentId}`);
             console.log(`Check Result: ${JSON.stringify(checkResult)}`);
 
-            # return {
-            #   result: checkResult.result,
-            #   commentId: checkResult.commentId
-            # };
             core.setOutput('result', checkResult.result);
             core.setOutput('commentId', checkResult.commentId);
   
