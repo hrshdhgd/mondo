@@ -3,9 +3,9 @@ name: Create new pull request
 on:
   workflow_dispatch:
   issues:
-    types: [ opened, edited ]
+    types: [opened, edited]
   issue_comment:
-    types: [ created, edited ]
+    types: [created, edited]
 
 jobs:
   check:
@@ -64,11 +64,9 @@ jobs:
             console.log(`Comment ID: ${checkResult.commentId}`);
             console.log(`Check Result: ${JSON.stringify(checkResult)}`);
 
-            return {
-              result: checkResult.result,
-              commentId: checkResult.commentId
-            };
-  
+            core.setOutput('result', checkResult.result);
+            core.setOutput('commentId', checkResult.commentId);
+
   build:
     needs: check
     if: needs.check.outputs.phraseExists == 'true'
@@ -76,7 +74,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.9"]
-        os: [ ubuntu-latest ]
+        os: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@v3
@@ -85,30 +83,35 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Log phraseExists output
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log('needs.check.outputs.phraseExists:', '${{ needs.check.outputs.phraseExists }}');
+
       - name: Return issue number
         id: gh-script-issue
         uses: actions/github-script@v6
         with:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
-            const issue_number = context.issue.number
-            const repo = context.repo.owner+"/"+context.repo.repo
-            return issue_number
-      
+            const issue_number = context.issue.number;
+            return { issue_number: issue_number };
+
       - name: Return repository name
         id: gh-script-repo
         uses: actions/github-script@v6
         with:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
-            const repo = context.repo.owner+"/"+context.repo.repo
-            return repo
+            const repo = context.repo.owner + "/" + context.repo.repo;
+            return { repo: repo };
 
       - name: Set branch name
         id: vars
         run: |
           echo "resource=src/ontology/mondo-edit.obo" >> $GITHUB_ENV
-          echo "branch-name=ochange_automation_"${{ steps.gh-script-issue.outputs.result }} >> $GITHUB_ENV
+          echo "branch-name=ochange_automation_${{ steps.gh-script-issue.outputs.issue_number }}" >> $GITHUB_ENV
       
       - name: Install dependencies
         run: |
@@ -118,15 +121,15 @@ jobs:
         id: ochange
         run: |
           ochange process-issue ${{ env.resource }} \
-          -r ${{ steps.gh-script-repo.outputs.result }} \
-          -n ${{ steps.gh-script-issue.outputs.result }} \
+          -r ${{ steps.gh-script-repo.outputs.repo }} \
+          -n ${{ steps.gh-script-issue.outputs.issue_number }} \
           -g ${{ secrets.GH_TOKEN }} \
           -p MONDO \
           -c ${{ needs.check.outputs.commentId }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
-        if: ${{ env.PR_TITLE}}
+        if: ${{ env.PR_TITLE }}
         with:
           branch-suffix: short-commit-hash
           labels: Automated
