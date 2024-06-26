@@ -71,7 +71,7 @@ jobs:
 
       - name: Log phraseExists output
         run: |
-          echo "phraseExists: ${{ steps.check-body.outputs.result }}"
+          echo "phraseExists: ${{ steps.check-body.outputs.result.result }}"
 
   build:
     needs: check
