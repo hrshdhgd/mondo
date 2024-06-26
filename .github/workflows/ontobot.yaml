@@ -19,9 +19,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const core = require('@actions/core');
-            const github = require('@actions/github');
-
             const issue = await github.rest.issues.get({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -67,8 +64,10 @@ jobs:
             console.log(`Comment ID: ${checkResult.commentId}`);
             console.log(`Check Result: ${JSON.stringify(checkResult)}`);
 
-            core.setOutput('result', checkResult.result);
-            core.setOutput('commentId', checkResult.commentId);
+            return {
+               result: checkResult.result,
+               commentId: checkResult.commentId
+             };
 
       - name: Log phraseExists output
         run: |
