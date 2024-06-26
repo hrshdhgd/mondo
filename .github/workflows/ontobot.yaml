@@ -90,7 +90,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install ontobot-change-agent
+          pip install ontobot-change-agent==0.4.10rc1
 
       - name: Run ochange
         id: ochange
