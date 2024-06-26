@@ -67,6 +67,12 @@ jobs:
             core.setOutput('result', checkResult.result);
             core.setOutput('commentId', checkResult.commentId);
 
+      - name: Log phraseExists output
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log('needs.check.outputs.phraseExists:', '${{ needs.check.outputs.phraseExists }}');
+
   build:
     needs: check
     if: needs.check.outputs.phraseExists == 'true'
@@ -82,12 +88,6 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-
-      - name: Log phraseExists output
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log('needs.check.outputs.phraseExists:', '${{ needs.check.outputs.phraseExists }}');
 
       - name: Return issue number
         id: gh-script-issue
