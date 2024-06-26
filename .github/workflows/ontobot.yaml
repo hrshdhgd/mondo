@@ -101,7 +101,7 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const issue_number = context.issue.number;
-            return { issue_number: issue_number };
+            return issue_number
 
       - name: Return repository name
         id: gh-script-repo
@@ -110,13 +110,13 @@ jobs:
           # github-token: ${{ secrets.GH_TOKEN }}
           script: |
             const repo = context.repo.owner + "/" + context.repo.repo;
-            return { repo: repo };
+            return repo;
 
       - name: Set branch name
         id: vars
         run: |
           echo "resource=src/ontology/mondo-edit.obo" >> $GITHUB_ENV
-          echo "branch-name=ochange_automation_"${{ steps.gh-script-issue.issue_number }} >> $GITHUB_ENV
+          echo "branch-name=ochange_automation_"${{ steps.gh-script-issue.outputs.result }} >> $GITHUB_ENV
       
       - name: Install dependencies
         run: |
@@ -126,8 +126,8 @@ jobs:
         id: ochange
         run: |
           ochange process-issue ${{ env.resource }} \
-          -r ${{ steps.gh-script-repo.repo }} \
-          -n ${{ steps.gh-script-issue.issue_number }} \
+          -r ${{ steps.gh-script-repo.outputs.result }} \
+          -n ${{ steps.gh-script-issue.outputs.result }} \
           -g ${{ secrets.GH_TOKEN }} \
           -p MONDO \
           -c ${{ needs.check.outputs.commentId }}
