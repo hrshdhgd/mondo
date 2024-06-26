@@ -129,7 +129,7 @@ jobs:
           -g ${{ secrets.GH_TOKEN }} \
           -p MONDO"
 
-          if [ "${{ needs.check.outputs.commentId }}" != "null" ]; then
+          if [ "${{ needs.check.outputs.commentId }}" != "" ]; then
             cmd="$cmd -c ${{ needs.check.outputs.commentId }}"
           fi
 
