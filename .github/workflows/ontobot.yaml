@@ -69,11 +69,11 @@ jobs:
 
       - name: Log phraseExists output
         run: |
-          echo "phraseExists: ${{ steps.check-body.outputs.result }}"
+          echo "phraseExists: ${{ steps.check-body.outputs.phraseExists }}"
           echo "commentId: ${{ steps.check-body.outputs.commentId }}"
     
       - name: Conditional step based on result
-        if: ${{ steps.check-body.outputs.result == 'true' }}
+        if: ${{ steps.check-body.outputs.phraseExists == 'true' }}
         run: echo "The phrase 'Hey ontobot' was found."
       
 
