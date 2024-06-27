@@ -136,13 +136,13 @@ jobs:
           echo "Running command: $cmd"
           eval $cmd
 
-      - uses: actions/create-github-app-token@v1
-        id: app-token
-        with:
-          app-id: ${{ vars.ONTOBOT_APP_ID }}
-          private-key: ${{ secrets.ONTOBOT_APP_PRIVATE_KEY }}
-          owner: ${{ github.repository_owner }}
-          repositories: ${{ github.repository }}
+      # - uses: actions/create-github-app-token@v1
+      #   id: app-token
+      #   with:
+      #     app-id: ${{ vars.ONTOBOT_APP_ID }}
+      #     private-key: ${{ secrets.ONTOBOT_APP_PRIVATE_KEY }}
+      #     owner: ${{ github.repository_owner }}
+      #     repositories: ${{ github.repository }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
