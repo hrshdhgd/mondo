@@ -141,8 +141,6 @@ jobs:
         with:
           app-id: ${{ vars.ONTOBOT_APP_ID }}
           private-key: ${{ secrets.ONTOBOT_APP_PRIVATE_KEY }}
-          owner: ${{ github.repository_owner }}
-          repositories: ${{ github.repository }}
 
       # - name: Get Token
       #   id: get_workflow_token
