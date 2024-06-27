@@ -156,4 +156,5 @@ jobs:
           title: ${{ env.PR_TITLE }}
           base: ${{ github.head_ref }}
           branch: ${{ env.branch-name }}
-          token: ${{ steps.app-token.outputs.token }}
+          # token: ${{ steps.app-token.outputs.token }}
+          token: ${{ secrets.ONTOBOT_TOKEN }}
