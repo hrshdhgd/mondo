@@ -122,6 +122,9 @@ jobs:
 
       - name: Run ochange
         id: ochange
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CBORG_API_KEY: ${{ secrets.CBORG_API_KEY }}
         run: |
           cmd="ochange process-issue ${{ env.resource }} \
           -r ${{ steps.gh-script-repo.outputs.result }} \
