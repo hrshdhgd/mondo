@@ -79,8 +79,8 @@ jobs:
       
 
   build:
-    needs: check
-    if: needs.check.outputs.phraseExists == 'true'
+    # needs: check
+    # if: needs.check.outputs.phraseExists == 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
