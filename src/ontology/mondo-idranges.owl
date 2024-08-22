@@ -174,8 +174,22 @@ Datatype: idrange:17
         EquivalentTo: 
             xsd:integer[>=1030000, <= 1039999]
 
+Datatype: idrange:18
+
+        Annotations: 
+            allocatedto: "Yousif Shwetar"
+
+        EquivalentTo: 
+            xsd:integer[>=1040000, <= 1049999]
+
+Datatype: idrange:19
+
+        Annotations: 
+            allocatedto: "PaulaDuekRoggli"
+
+        EquivalentTo: 
+            xsd:integer[>=1050000, <= 1050099]
+
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
-
-
      

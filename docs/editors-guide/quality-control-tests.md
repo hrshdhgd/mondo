@@ -52,6 +52,44 @@ SELECT DISTINCT ?entity ?property ?value WHERE {
 }
 ```
 
+###  qc-clingen.sparql
+
+```
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX OMO: <http://purl.obolibrary.org/obo/OMO_>
+PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+
+# description: This QC check ensures that no class ever has two clingen labels, and that there are only exact preferred labels
+
+SELECT ?entity ?property ?value
+WHERE {
+ {
+  ?ax owl:annotatedSource ?entity ;
+         owl:annotatedProperty ?property ;
+         oboInOwl:hasSynonymType <http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL> .
+  ?ax2 owl:annotatedSource ?entity ;
+         owl:annotatedProperty ?property ;
+         owl:annotatedTarget ?value ;
+         oboInOwl:hasSynonymType <http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL> .
+  FILTER(?ax!=?ax2)
+  FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))	
+  } UNION {
+    ?ax owl:annotatedSource ?entity ;
+         owl:annotatedProperty ?property ;
+         oboInOwl:hasSynonymType <http://purl.obolibrary.org/obo/mondo#CLINGEN_LABEL> .
+    FILTER(?property!=oboInOwl:hasExactSynonym)
+    FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))	
+  }
+}
+
+```
+
 ###  qc-conforms-to-omimps-and-more.sparql
 
 ```
@@ -215,7 +253,7 @@ ORDER BY ?entity
 ###  qc-illegal-prefix-on-xref-annotation.sparql
 
 ```
-# description: Looks for xrefs with illegal prefixes that are on annotation properties
+# description: Looks for xrefs with illegal prefixes that are on annotation properies
 
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix IAO: <http://purl.obolibrary.org/obo/IAO_>
@@ -619,6 +657,49 @@ SELECT DISTINCT ?entity ?property ?value WHERE {
 ORDER BY ?entity
 ```
 
+###  qc-ordo-subset-exact-mapping.sparql
+
+```
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+## This QC check ensures that if we have a source for subset, it must 
+## also be mapped to the same term as the subset
+
+SELECT DISTINCT ?entity ?property ?value WHERE {
+    VALUES ?subset {
+        <http://purl.obolibrary.org/obo/mondo#ordo_disorder>
+    }
+    ?entity oboInOwl:inSubset ?subset .
+
+    ?subset_anno a owl:Axiom ;
+           owl:annotatedSource ?entity ;
+           owl:annotatedProperty oboInOwl:inSubset ;
+           owl:annotatedTarget ?subset ;
+           oboInOwl:source ?xref .
+
+    FILTER NOT EXISTS {
+        ?entity oboInOwl:hasDbXref ?xref .
+        VALUES ?mondo_source {
+            "MONDO:obsoleteEquivalent"
+            "MONDO:equivalentTo"
+        }
+        ?xref_anno a owl:Axiom ;
+            owl:annotatedSource ?entity ;
+            owl:annotatedProperty oboInOwl:hasDbXref ;
+            owl:annotatedTarget ?xref ;
+            oboInOwl:source ?mondo_source .
+    }
+    FILTER (STRSTARTS(str(?xref), "Orphanet:"))
+    FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))
+    BIND(?xref as ?value)
+    BIND(str(?subset) as ?property)
+}
+ORDER BY ?entity
+
+```
+
 ###  qc-predispose-subClassOf.sparql
 
 ```
@@ -638,6 +719,57 @@ SELECT DISTINCT ?entity ?property ?value WHERE {
   BIND(mondo:predisposes_towards as ?property)
 }
 ORDER BY ?entity
+```
+
+###  qc-preferred-external-no-equivalent.sparql
+
+```
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX OMO: <http://purl.obolibrary.org/obo/OMO_>
+PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+# description: Ensure that preferredExternal annotations are used correctly
+
+SELECT ?entity ?property ?value WHERE {
+    VALUES ?property { oboInOwl:hasDbXref }
+    {
+        # Check for cases where there is a preferredExternal annotation
+        # but no MONDO:equivalentTo
+        [] owl:annotatedSource ?entity ;
+            owl:annotatedProperty ?property ;
+            owl:annotatedTarget ?value ;
+            oboInOwl:source "MONDO:preferredExternal" .
+        FILTER NOT EXISTS {
+            [] owl:annotatedSource ?entity ;
+            owl:annotatedProperty ?property ;
+            owl:annotatedTarget ?value ;
+            oboInOwl:source "MONDO:equivalentTo" .
+        }
+    } UNION {
+        # Check for cases where there is a preferredExternal annotation
+        # but no MONDO:equivalentTo to a different class
+        # This indicates that there is no point to saying "preferredExternal"
+        # as there is nothing this can be preferred to.
+        [] owl:annotatedSource ?entity ;
+            owl:annotatedProperty ?property ;
+            owl:annotatedTarget ?value ;
+            oboInOwl:source "MONDO:preferredExternal" .
+        FILTER NOT EXISTS {
+            [] owl:annotatedSource ?entity2 ;
+            owl:annotatedProperty ?property ;
+            owl:annotatedTarget ?value ;
+            oboInOwl:source "MONDO:equivalentTo" .
+        }
+        FILTER(?entity!=?entity2)
+        FILTER (isIRI(?entity2) && STRSTARTS(str(?entity2), "http://purl.obolibrary.org/obo/MONDO_"))
+    }
+  FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))
+}
 ```
 
 ###  qc-proxy-merge-equiv.sparql
@@ -752,6 +884,77 @@ WHERE {
 }
 ```
 
+###  qc-axiom-provenance-source.sparql
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix IAO: <http://purl.obolibrary.org/obo/IAO_>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+prefix def: <http://purl.obolibrary.org/obo/IAO_0000115>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+# description: Looks for axiom annotations which use faulty provenance properties
+
+SELECT DISTINCT ?entity ?property ?value
+
+WHERE
+{
+    ?entity ?property ?v .
+
+    ?axiom owl:annotatedSource ?entity ;
+             owl:annotatedProperty ?property ;
+             owl:annotatedTarget ?v ;
+             ?provenance ?x .
+    
+    # The axiom provenance should typically use oio:source, so lets look for case where it does not
+    # (also, it should not correspond to the actual RDF-reified annotation properties)
+    FILTER(
+           ?provenance!=oio:source 
+        && ?provenance!=owl:annotatedSource 
+        && ?provenance!=owl:annotatedTarget
+        && ?provenance!=owl:annotatedProperty
+        && ?provenance!=rdf:type
+    )
+
+    # Ignore Synonym type annotations
+    FILTER(
+        !(?provenance = oio:hasSynonymType && 
+            (
+                ?property IN (
+                    oio:hasExactSynonym, 
+                    oio:hasRelatedSynonym, 
+                    oio:hasBroadSynonym, 
+                    oio:hasNarrowSynonym)
+            )
+        )
+    )
+
+    # Xrefs are allowed on definitions and synonyms
+    FILTER (
+        !( 
+            ?provenance = oio:hasDbXref && 
+            ?property IN (
+                IAO:0000115, 
+                oio:hasExactSynonym, 
+                oio:hasRelatedSynonym, 
+                oio:hasBroadSynonym, 
+                oio:hasNarrowSynonym
+            )
+        )
+    )
+
+    BIND(CONCAT(str(?v),CONCAT(": ",str(?provenance))) as ?value)
+
+   FILTER( !isBlank(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))
+} ORDER BY ?entity
+
+
+```
+
 ###  qc-cross-species-analog.sparql
 
 ```
@@ -776,6 +979,35 @@ WHERE
   }
 
  FILTER( !isBlank(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))
+}
+
+```
+
+###  qc-cycles.sparql
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix IAO: <http://purl.obolibrary.org/obo/IAO_>
+prefix MONDO: <http://purl.obolibrary.org/obo/MONDO_>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+prefix def: <http://purl.obolibrary.org/obo/IAO_0000115>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX RO: <http://purl.obolibrary.org/obo/RO_>
+
+
+SELECT ?entity ?property ?value 
+
+WHERE
+{
+  VALUES ?property { RO:0004003 RO:0004029 }
+  ?entity rdfs:subClassOf [
+        owl:onProperty ?property ;
+        owl:someValuesFrom ?entity
+      ] .
+  BIND ("Self cycle detected" as ?value)
 }
 
 ```
@@ -811,7 +1043,7 @@ ORDER BY ?entity
 ###  qc-definition-containing-underscore.sparql
 
 ```
-# description: Checks whether definitions contain underscore characters, which could be an indication of a typo.
+# description: Checks wether definitions contain underscore characters, which could be an indication of a typo.
 
 prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -1018,8 +1250,7 @@ prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 # Tests if an animal disease made it into the rare disease subset
 
-SELECT DISTINCT ?entity ?property ?value
-WHERE
+SELECT DISTINCT ?entity ?property ?value WHERE
 {
   VALUES ?property { <http://purl.obolibrary.org/obo/mondo#excluded_subClassOf> }
   ?entity ?property ?value .
@@ -1037,7 +1268,7 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-# Checks whether Axiom annotation are one of oboInOwl:source, oboInOwl:hasDbXref or oboInOwl:hasSynonymType .
+# Checks wether Axiom annotation are one of oboInOwl:source, oboInOwl:hasDbXref or oboInOwl:hasSynonymType .
 
 SELECT distinct ?entity ?property ?value
 WHERE 
@@ -1218,7 +1449,7 @@ PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
 PREFIX OMO: <http://purl.obolibrary.org/obo/OMO_>
 PREFIX MONDO: <http://purl.obolibrary.org/obo/MONDO_>
 
-# description: Checks if a proper obsolescence reason was documented for this class
+# description: Checks if a proper obsolesence reason was documented for this class
 
 SELECT ?entity ?property ?value WHERE {
   VALUES ?property { IAO:0000231 }
@@ -1283,6 +1514,7 @@ SELECT DISTINCT ?term ?property WHERE
 		dc:conformsTo,
 		dc:creator,
 		dce:date,
+		mondo:curated_content_resource,
 		mondo:excluded_from_qc_check,
 		mondo:excluded_subClassOf,
 		mondo:excluded_synonym,
@@ -1334,10 +1566,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 
-# Tests for excluded_subClassOf relationships that do not also have a source annotation with an ORCID.
+# Tests if an animal disease made it into the rare disease subset
 
-SELECT DISTINCT ?entity ?property ?value
-WHERE
+SELECT DISTINCT ?entity ?property ?value WHERE
 {
   VALUES ?property { <http://purl.obolibrary.org/obo/mondo#excluded_subClassOf> }
   ?entity ?property ?value .
@@ -1639,8 +1870,7 @@ ORDER BY ?entity
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?entity ?property ?value
-WHERE {
+SELECT DISTINCT ?entity ?property ?value WHERE {
   VALUES ?property {oboInOwl:hasDbXref}
   ?entity ?property ?value .
   FILTER (!regex(?value, "^[A-Za-z_][A-Za-z0-9_.-]*[A-Za-z0-9_]:[^\\s]+$"))
@@ -1657,21 +1887,21 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+# description: This QC check ensures that, for our core namespaces, we always have a source
+
 SELECT DISTINCT ?entity ?xref WHERE {
     ?entity oboInOwl:hasDbXref ?xref .
-    OPTIONAL {
-      ?entity owl:deprecated ?obsolete .
-    }
     FILTER NOT EXISTS {
-    ?xref_anno a owl:Axiom ;
-           owl:annotatedSource ?entity ;
-           owl:annotatedProperty oboInOwl:hasDbXref ;
-           owl:annotatedTarget ?xref ;
-           oboInOwl:source ?source .
+    [] a owl:Axiom ;
+        owl:annotatedSource ?entity ;
+        owl:annotatedProperty oboInOwl:hasDbXref ;
+        owl:annotatedTarget ?xref ;
+        oboInOwl:source ?source .
    	    FILTER (strstarts(str(?source), "MONDO:"))
-  }
-
-    FILTER (strstarts(str(?xref), "OMIM:") || (strstarts(str(?xref), "OMIMPS:" || strstarts(str(?xref), "DOID:") || strstarts(str(?xref), "Orphanet:") || strstarts(str(?xref), "ORDO:") || strstarts(str(?xref), "NCIT:"))))
+    }
+    # 20.06.2024: had to remove Orphanet and NCIT as they actually had too many errors
+    # strstarts(str(?xref), "Orphanet:") || strstarts(str(?xref), "ORDO:") || strstarts(str(?xref), "NCIT:")
+    FILTER (strstarts(str(?xref), "OMIM:") || strstarts(str(?xref), "OMIMPS:") || strstarts(str(?xref), "DOID:") || strstarts(str(?xref), "OMIA:"))
     FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))	
 }
 ORDER BY ?entity
