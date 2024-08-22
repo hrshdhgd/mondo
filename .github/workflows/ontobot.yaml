@@ -128,6 +128,7 @@ jobs:
           -n ${{ steps.gh-script-issue.outputs.result }} \
           -g ${{ secrets.GH_TOKEN }} \
           -p MONDO"
+          --use-llm
 
           if [ "${{ needs.check.outputs.commentId }}" != "" ]; then
             cmd="$cmd -c ${{ needs.check.outputs.commentId }}"
