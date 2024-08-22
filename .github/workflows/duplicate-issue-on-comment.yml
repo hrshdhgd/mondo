@@ -3,6 +3,7 @@ name: Copy Issue Description to Comment with Header
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 
 jobs:
   check_template:
