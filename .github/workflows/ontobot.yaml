@@ -118,7 +118,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install ontobot-change-agent
+          pip install ontobot-change-agent[llm]
 
       - name: Run ochange
         id: ochange
