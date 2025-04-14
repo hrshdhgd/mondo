@@ -822,7 +822,7 @@ SELECT DISTINCT ?entity ?property ?value WHERE {
   	FILTER ((str(?source2)="MONDO:equivalentTo") || (str(?source2)="MONDO:obsoleteEquivalent") || (str(?source2)="MONDO:equivalentObsolete") || (str(?source2)="MONDO:obsoleteEquivalentObsolete"))
     FILTER (isIRI(?entity) && STRSTARTS(str(?entity), "http://purl.obolibrary.org/obo/MONDO_"))
     FILTER (isIRI(?entity2) && STRSTARTS(str(?entity2), "http://purl.obolibrary.org/obo/MONDO_"))
-    BIND(?xref as ?property)
+    BIND(IRI(CONCAT("http://mondo.source/", ?xref)) AS ?property)
     BIND(str(?entity2) as ?value)
 }
 ORDER BY ?entity
@@ -1002,7 +1002,7 @@ SELECT ?entity ?property ?value
 
 WHERE
 {
-  VALUES ?property { RO:0004003 RO:0004029 }
+#  VALUES ?property { RO:0004003 RO:0004029 }
   ?entity rdfs:subClassOf [
         owl:onProperty ?property ;
         owl:someValuesFrom ?entity
